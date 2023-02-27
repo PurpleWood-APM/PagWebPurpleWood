@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Digity - Digital Agency Tailwind Css Template</title>
+
+        <!-- Site favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+        <!-- Swiper Slider Css -->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+        <!-- Style Css -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body class="antialiased font-poppins text-[15px] leading-7 text-dark bg-[#F5FCF8]">
+        <!-- Start Navbar -->
+        <header class="main-menu">
+            <nav class="fixed top-0 w-full z-50 mobile-menu-bg">
+                <div class="container">
+                    <div class="lg:flex items-center justify-between gap-6">
+                        <div class="flex items-center justify-between">
+                            <a href="index.html">
+                                <img src="assets/images/logo-dark.svg" class="" alt="logo" />
+                            </a>
+                            <button class="text-end mobile-menu-button lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="navbarNav" class="mobile-menu hidden lg:block">
+                            <ul class="lg:space-x-8 space-y-4 lg:space-y-0 lg:flex items-center mt-6 lg:mt-0 max-[1024px]:max-h-80 max-[1024px]:overflow-scroll">
+                                <li>
+                                    <a href="index.html" class="uppercase text-sm font-medium lg:py-9 tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="relative group">
+                                    <a href="javaScript:void();" class="uppercase text-sm font-medium lg:py-9 tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">
+                                        Pages
+                                        <span class="ml-1.5">
+                                            <svg width="8" height="6" class="inline-block" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.0466659 0.744778L3.86978 5.53751C3.93301 5.61663 4.06672 5.61663 4.12995 5.53751L7.95348 0.744445C7.99899 0.68712 8.01247 0.601674 7.98793 0.527294C7.98285 0.511735 7.97719 0.499838 7.97245 0.490935C7.94325 0.436855 7.88717 0.403076 7.8256 0.403076H0.174128C0.112893 0.403076 0.0564835 0.436772 0.02753 0.490935C0.0226212 0.500004 0.0169636 0.511985 0.0122212 0.526378C-0.0124892 0.601674 0.000906017 0.687287 0.0466659 0.744778Z"
+                                                    fill="#272727"
+                                                />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <div class="sub-menu">
+                                        <ul>
+                                            <li>
+                                                <a href="about.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">About</a>
+                                            </li>
+                                            <li>
+                                                <a href="faqs.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Faqs</a>
+                                            </li>
+                                            <li>
+                                                <a href="services.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Service</a>
+                                            </li>
+                                            <li>
+                                                <a href="utility.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Utility</a>
+                                            </li>
+                                            <li>
+                                                <a href="pricing.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Pricing</a>
+                                            </li>
+                                            <li>
+                                                <a href="error.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Error</a>
+                                            </li>
+                                            <li>
+                                                <a href="team.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Team</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="work.html" class="uppercase text-sm font-medium lg:py-9 tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">
+                                        Work
+                                    </a>
+                                </li>
+                                <li class="nav-active">
+                                    <a href="blog.html" class="uppercase text-sm font-medium lg:py-9 tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="uppercase text-sm font-medium lg:py-9 tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">
+                                        Contact
+                                    </a>
+                                </li>
+                                <a href="contact.html" class="btn-blue navbar-btn lg:!ml-16">Start a project</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- End Navbar -->
+
+        <!-- Start Header -->
+        <section class="bg-[url('../images/header-bg.png')] bg-right-top bg-no-repeat bg-cover pt-36 pb-20 md:pb-[120px] md:pt-[240px]">
+            <div class="container">
+                <div class="grid grid-cols-1">
+                    <div class="text-center">
+                        <h2 class="font-semibold text-4xl leading-snug md:text-6xl md:leading-snug lg:text-[70px] lg:leading-[90px]">Blog</h2>
+                        <ul class="mt-2 text-center">
+                            <li class="hover:text-green inline-block tracking-[0.86px] font-medium uppercase duration-300 after:inline-block after:text-green after:mx-1.5 after:top-[2px] after:relative after:content-['/']">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="text-dark-semilight inline-block tracking-[0.86px] font-medium uppercase duration-300"><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Header -->
+
+        <!-- Start Divider -->
+        <div class="container">
+            <div class="bg-light h-px w-full block"></div>
+        </div>
+        <!-- End Divider -->
+
+        <!-- Start Blog -->
+        <section class="md:py-[120px] py-20">
+            <div class="container">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div class="bg-white md:flex items-center rounded-2xl overflow-hidden">
+                        <img src="assets/images/blog/1.jpg" class="max-h-[350px] md:max-w-[220px] md:h-full md:object-cover" alt="" />
+                        <div class="p-8 flex-1">
+                            <p class="font-medium text-sm text-dark-semilight tracking-[0.86px] uppercase">April 17, 2022</p>
+                            <h4 class="mt-4 text-[22px] leading-[34px] font-semibold hover:text-green duration-300"><a href="blog-details.html">How to bring Cosa to your company</a></h4>
+                            <p class="mt-4 text-dark-light leading-7 text-[15px]">Enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                            <a href="blog-details.html" class="text-green mt-16 inline-block uppercase font-medium tracking-[0.86px]">Read more</a>
+                        </div>
+                    </div>
+                    <div class="bg-white md:flex items-center rounded-2xl overflow-hidden">
+                        <img src="assets/images/blog/2.jpg" class="max-h-[350px] md:max-w-[220px] md:h-full md:object-cover" alt="" />
+                        <div class="p-8 flex-1">
+                            <p class="font-medium text-sm text-dark-semilight tracking-[0.86px] uppercase">April 17, 2022</p>
+                            <h4 class="mt-4 text-[22px] leading-[34px] font-semibold hover:text-green duration-300"><a href="blog-details.html">How to bring Cosa to your company</a></h4>
+                            <p class="mt-4 text-dark-light leading-7 text-[15px]">Enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                            <a href="blog-details.html" class="text-green mt-16 inline-block uppercase font-medium tracking-[0.86px]">Read more</a>
+                        </div>
+                    </div>
+                    <div class="bg-white md:flex items-center rounded-2xl overflow-hidden">
+                        <img src="assets/images/blog/4.jpg" class="max-h-[350px] md:max-w-[220px] md:h-full md:object-cover" alt="" />
+                        <div class="p-8 flex-1">
+                            <p class="font-medium text-sm text-dark-semilight tracking-[0.86px] uppercase">January 9, 2022</p>
+                            <h4 class="mt-4 text-[22px] leading-[34px] font-semibold hover:text-green duration-300"><a href="blog-details.html">Curating a workplace that inspires</a></h4>
+                            <p class="mt-4 text-dark-light leading-7 text-[15px]">Enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                            <a href="blog-details.html" class="text-green mt-16 inline-block uppercase font-medium tracking-[0.86px]">Read more</a>
+                        </div>
+                    </div>
+                    <div class="bg-white md:flex items-center rounded-2xl overflow-hidden">
+                        <img src="assets/images/blog/3.jpg" class="max-h-[350px] md:max-w-[220px] md:h-full md:object-cover" alt="" />
+                        <div class="p-8 flex-1">
+                            <p class="font-medium text-sm text-dark-semilight tracking-[0.86px] uppercase">June 16, 2022</p>
+                            <h4 class="mt-4 text-[22px] leading-[34px] font-semibold hover:text-green duration-300"><a href="blog-details.html">Designers who changed the webflow</a></h4>
+                            <p class="mt-4 text-dark-light leading-7 text-[15px]">Enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                            <a href="blog-details.html" class="text-green mt-16 inline-block uppercase font-medium tracking-[0.86px]">Read more</a>
+                        </div>
+                    </div>
+                    <div class="bg-white md:flex items-center rounded-2xl overflow-hidden">
+                        <img src="assets/images/blog/5.jpg" class="max-h-[350px] md:max-w-[220px] md:h-full md:object-cover" alt="" />
+                        <div class="p-8 flex-1">
+                            <p class="font-medium text-sm text-dark-semilight tracking-[0.86px] uppercase">March 12, 2022</p>
+                            <h4 class="mt-4 text-[22px] leading-[34px] font-semibold hover:text-green duration-300"><a href="blog-details.html">How to win new clients in development</a></h4>
+                            <p class="mt-4 text-dark-light leading-7 text-[15px]">Enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                            <a href="blog-details.html" class="text-green mt-16 inline-block uppercase font-medium tracking-[0.86px]">Read more</a>
+                        </div>
+                    </div>
+                    <div class="bg-white md:flex items-center rounded-2xl overflow-hidden">
+                        <img src="assets/images/blog/6.jpg" class="max-h-[350px] md:max-w-[220px] md:h-full md:object-cover" alt="" />
+                        <div class="p-8 flex-1">
+                            <p class="font-medium text-sm text-dark-semilight tracking-[0.86px] uppercase">February 28, 2022</p>
+                            <h4 class="mt-4 text-[22px] leading-[34px] font-semibold hover:text-green duration-300"><a href="blog-details.html">Why we switched to Figma</a></h4>
+                            <p class="mt-4 text-dark-light leading-7 text-[15px]">Enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                            <a href="blog-details.html" class="text-green mt-16 inline-block uppercase font-medium tracking-[0.86px]">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Blog -->
+
+        <!-- Start Divider -->
+        <div class="container">
+            <div class="bg-light h-px w-full block"></div>
+        </div>
+        <!-- End Divider -->
+
+        <!-- Start Cta -->
+        <section class="md:py-[120px] py-20">
+            <div class="container">
+                <div class="grid grid-cols-1">
+                    <div class="max-w-[780px] text-center mx-auto">
+                        <h2 class="text-4xl leading-snug md:text-6xl md:leading-snug lg:text-[70px] lg:leading-[90px] font-semibold">Build your project with Digity</h2>
+                        <p class="mt-8 text-lg leading-[30px] text-dark-light">We design and build beautiful websites, apps and branding</p>
+                        <div class="mt-12">
+                            <a href="contact.html" class="btn-green">Start a project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Cta -->
+
+        <!-- Start Footer -->
+        <footer class="bg-dark">
+            <div class="container">
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-10 lg:gap-24 md:py-[120px] py-20">
+                    <div class="md:col-span-2 md:border-r border-[#3D3D3D]">
+                        <div class="max-w-xs">
+                            <img src="assets/images/logo-light.svg" alt="" />
+                            <p class="mt-8 text-[15px] leading-7 text-[#7B7B7B]">With more than 20 years of experience we can deliver the best product design</p>
+                            <div class="md:mt-12 mt-8">
+                                <ul class="flex items-center space-x-4">
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/images/fb.svg" alt="" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/images/twiiter.svg" alt="" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/images/linkedin.svg" alt="" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/images/behance.svg" alt="" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:col-span-3">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="text-white">
+                                <p class="font-semibold text-lg leading-7 text-white">Navigation</p>
+                                <ul class="md:mt-8 mt-4 space-y-4">
+                                    <li>
+                                        <a href="#" class="text-[#7B7B7B] hover:text-[#FAFAFA] text-[15px] leading-[22px] duration-300">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-[#7B7B7B] hover:text-[#FAFAFA] text-[15px] leading-[22px] duration-300">
+                                            About
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-[#7B7B7B] hover:text-[#FAFAFA] text-[15px] leading-[22px] duration-300">
+                                            Projects
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-[#7B7B7B] hover:text-[#FAFAFA] text-[15px] leading-[22px] duration-300">
+                                            Blog
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-[#7B7B7B] hover:text-[#FAFAFA] text-[15px] leading-[22px] duration-300">
+                                            Contact
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="text-white">
+                                <p class="font-semibold text-lg leading-7 text-white">Infomation</p>
+                                <ul class="md:mt-8 mt-4 space-y-4">
+                                    <li>
+                                        <a href="#" class="text-[#7B7B7B] hover:text-[#FAFAFA] text-[15px] leading-[22px] duration-300">
+                                            Style Guide
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-[#7B7B7B] hover:text-[#FAFAFA] text-[15px] leading-[22px] duration-300">
+                                            Licensing
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-[#7B7B7B] hover:text-[#FAFAFA] text-[15px] leading-[22px] duration-300">
+                                            Changelog
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="text-white">
+                                <p class="font-semibold text-lg leading-7 text-white">Find Us</p>
+                                <p class="md:mt-8 mt-4 text-[#7B7B7B] text-[15px] leading-[22px]">Greenwich Village & Soho, 10012 New York, USA</p>
+                                <p class="mt-6 text-[#7B7B7B] text-[15px] leading-[22px]">800 123-456</p>
+                                <p class="text-[15px] leading-[22px] text-[#7B7B7B]">digity@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#3D3D3D] h-px w-full block"></div>
+                <div class="grid grid-cols-1">
+                    <div class="py-8">
+                        <p class="text-[#7B7B7B] text-[15px] leading-7">&copy; 2023 Copyright <a href="https://themeforest.net/user/themesboss/portfolio" target="_blank" class="text-[#FAFAFA] font-medium">ThemesBoss.</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <!-- All Javascript -->
+
+        <!-- Swiper Slider JS -->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!-- Custom Js -->
+        <script src="assets/js/custom.js"></script>
+    </body>
+</html>

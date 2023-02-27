@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	    <!-- META -->
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="">
+	    <meta name="keywords" content="agency, bootstrap, business, corporate, creative, landing page, marketing, multipurpose, product, product launch, responsive, software, startup, startup landing page">
+	    <meta name="author" content="Digity Theme">
+
+	    <!-- Page Title -->
+	    <title>Digity - Digital Agency Tailwind Css Template</title>
+
+	    <!-- Google-Fonts -->
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+	    <!-- Bootstrap Core CSS -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	    <!-- Custom CSS -->
+	    <link href="css/styles.css" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<!--Start Header-->
+		<nav class="navbar navbar-default navbar-fixed-top">
+		    <div class="container">
+		        <!-- Brand and toggle get grouped for better mobile display -->
+		        <div class="navbar-header">
+
+		            <a class="navbar-brand" href="#">Digity -
+		                <small>Documentation 1.0</small>
+		            </a>
+		        </div>
+
+		        <!-- Collect the nav links, forms, and other content for toggling -->
+		        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+		        </div><!-- /.navbar-collapse -->
+		    </div><!-- /.container-fluid -->
+		</nav>
+		<!--Start Header-->
+
+		<div id="wrapper">
+		    <!-- Page Content -->
+		    <div id="page-content-wrapper">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-lg-12">
+		                    <div class="right-bar">
+
+		                        <div id="intro" class="com-container">
+
+		                            <div id="structure" class="com-container">
+		                                <h3 class="text-center">Thank you very much for your purchase!</h3>
+		                                <div class="p-t-20">
+		                                    <div class="alert alert-success alert-dismissable">
+		                                        <p>If you have any questions that are beyond the scope of this documentation,
+		                                            please feel free to email or contact us via my page.</p>
+												<p><b>Support Email:</b> themesboss@gmail.com</p>
+		                                    </div>
+		                                </div>
+		                            </div>
+
+		                            <h4 class="page-header">Installation</h4>
+
+									<h5>To setup the admin theme, follow below-mentioned steps</h5>
+		                            <p>The zip file contains all files integrated with Landik, however you need to perform following steps to get node_modules etc.</p>
+
+									<h5>Note : Make sure this all installation process is done in command prompt.</h5>
+
+									<p>make sure you have installed tailwindcss in your os. If not installed then please run the below command to install it globally.<p>
+									
+									<pre class="prettyprint">npm install </pre>
+
+									<p>After Completion of installation Run the following command in the command prompt to start tailwindcss development server.</p>
+									<pre class="prettyprint">npm run dev</pre>
+
+		                            <div id="structure" class="com-container">
+		                                <h4 class="page-header">Structure</h4>
+		                                <p>I have tried my best to have standards and modular structure while developing the theme. Following sections are explaining the theme File & Folder, structure, html file struture and plugins.</p>
+
+	                                    <div class="row p-t-20">
+		                                    <div class="col-sm-12 p-t-30">
+		                                        <h4>Folder Structure</h4>
+		                                        <hr/>
+		                                        <p class="m-t-20">
+                                                    I have tried to follow the standards and modular structure while developing the theme.
+                                                    Let's take a look at the package structure:
+                                                </p>
+
+                                                <pre class="prettyprint">
+HTML/
+│  └─ Build/
+│        └── tailwind.css
+│  └─ Assets/
+|        └─ css/
+│            └── All Css files
+│        └─ Js/
+│            └── All javascript files
+│        └─ Images
+│            └── All images
+└──*.html
+└──*package.json
+└──*tailwind.config.js													   </pre>
+
+		                                    </div>
+		                                </div>
+
+		                                <div class="row p-t-20">
+		                                    <div class="col-sm-12 p-t-30">
+		                                        <h4>Index HTML Structure</h4>
+		                                        <hr/>
+		                                        <!-- HTML generated using hilite.me --><div style="overflow:auto;width:auto;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;body</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;antialiased font-poppins text-[15px] leading-7 text-dark bg-[#F5FCF8]&quot;</span><span style="color: #007700">&gt;</span>
+    <span style="color: #888888">&lt;!-- Start Navbar --&gt;</span>
+    <span style="color: #007700">&lt;header</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;main-menu&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/header&gt;</span>
+    <span style="color: #888888">&lt;!-- End Navbar --&gt;</span>
+
+    <span style="color: #888888">&lt;!-- Start Home --&gt;</span>
+    <span style="color: #007700">&lt;section</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;bg-[url(&#39;../images/home-bg.jpg&#39;)] bg-top pt-36 md:pt-[240px]&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/section&gt;</span>
+    <span style="color: #888888">&lt;!-- End Home --&gt;</span>
+
+    <span style="color: #888888">&lt;!-- Start Logo --&gt;</span>
+    <span style="color: #007700">&lt;section</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;md:py-[120px] py-20 bg-blue&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/section&gt;</span>
+    <span style="color: #888888">&lt;!-- End Logo --&gt;</span>
+
+    <span style="color: #888888">&lt;!-- Start Service --&gt;</span>
+    <span style="color: #007700">&lt;section</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;md:py-[120px] py-20&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/section&gt;</span>
+    <span style="color: #888888">&lt;!-- End Service --&gt;</span>
+
+    <span style="color: #888888">&lt;!-- Start Divider --&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;container&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #888888">&lt;!-- End Divider --&gt;</span>
+
+    <span style="color: #888888">&lt;!-- Start About Us --&gt;</span>
+    <span style="color: #007700">&lt;section</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;md:py-[120px] py-20&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/section&gt;</span>
+    <span style="color: #888888">&lt;!-- End About Us --&gt;</span>
+
+    <span style="color: #888888">&lt;!-- Start Divider --&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;container&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #888888">&lt;!-- End Divider --&gt;</span>
+
+    <span style="color: #888888">&lt;!-- Start Work --&gt;</span>
+    <span style="color: #007700">&lt;section</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;md:py-[120px] py-20&quot;</span> <span style="color: #0000CC">id=</span><span style="background-color: #fff0f0">&quot;work&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/section&gt;</span>
+    <span style="color: #888888">&lt;!-- End Work --&gt;</span>
+
+    <span style="color: #888888">&lt;!-- Start Divider --&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;container&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #888888">&lt;!-- End Divider --&gt;</span>
+
+    <span style="color: #888888">&lt;!-- Start Client --&gt;</span>
+    <span style="color: #007700">&lt;section</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;md:py-[120px] py-20&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/section&gt;</span>
+    <span style="color: #888888">&lt;!-- End Client --&gt;</span>
+
+    <span style="color: #888888">&lt;!-- Start Divider --&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;container&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #888888">&lt;!-- End Divider --&gt;</span>
+
+    <span style="color: #888888">&lt;!-- Start Get In Touch --&gt;</span>
+    <span style="color: #007700">&lt;section</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;md:py-[120px] py-20&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/section&gt;</span>
+    <span style="color: #888888">&lt;!-- End Get In Touch --&gt;</span>
+
+    <span style="color: #888888">&lt;!-- Start Divider --&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;container&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #888888">&lt;!-- End Divider --&gt;</span>
+
+    <span style="color: #888888">&lt;!-- Start Team --&gt;</span>
+    <span style="color: #007700">&lt;section</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;md:py-[120px] py-20&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/section&gt;</span>
+    <span style="color: #888888">&lt;!-- End Team --&gt;</span>
+
+    <span style="color: #888888">&lt;!-- Start Divider --&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;container&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #888888">&lt;!-- End Divider --&gt;</span>
+
+    <span style="color: #888888">&lt;!-- Start Blog --&gt;</span>
+    <span style="color: #007700">&lt;section</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;md:py-[120px] py-20&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/section&gt;</span>
+    <span style="color: #888888">&lt;!-- End Blog --&gt;</span>
+
+    <span style="color: #888888">&lt;!-- Start Divider --&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;container&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #888888">&lt;!-- End Divider --&gt;</span>
+
+    <span style="color: #888888">&lt;!-- Start Cta --&gt;</span>
+    <span style="color: #007700">&lt;section</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;md:py-[120px] py-20&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/section&gt;</span>
+    <span style="color: #888888">&lt;!-- End Cta --&gt;</span>
+
+    <span style="color: #888888">&lt;!-- Start Footer --&gt;</span>
+    <span style="color: #007700">&lt;footer</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;bg-dark&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/footer&gt;</span>
+    <span style="color: #888888">&lt;!-- End Footer --&gt;</span>
+
+    <span style="color: #888888">&lt;!-- All Javascript --&gt;</span>
+    <span style="color: #007700">&lt;script </span><span style="color: #0000CC">type=</span><span style="background-color: #fff0f0">&quot;text/javascript&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/script&gt;</span>
+<span style="color: #007700">&lt;/body&gt;</span>
+</pre></div>
+
+		                                    </div>
+		                                </div>
+
+                                        <div class="row p-t-20">
+                                            <div class="col-sm-12 p-t-30">
+                                                <h4>Pages HTML Structure</h4>
+                                                <hr/>
+                                                <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;body</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;antialiased font-poppins text-[15px] leading-7 text-dark bg-[#F5FCF8]&quot;</span><span style="color: #007700">&gt;</span>
+    <span style="color: #888888">&lt;!-- Start Navbar --&gt;</span>
+    <span style="color: #007700">&lt;header</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;main-menu&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/header&gt;</span>
+    <span style="color: #888888">&lt;!-- End Navbar --&gt;</span>
+
+    <span style="color: #888888">&lt;!-- Start Header --&gt;</span>
+    <span style="color: #007700">&lt;section</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;bg-[url(&#39;../images/header-bg.png&#39;)] bg-right-top bg-no-repeat bg-cover pt-36 pb-20 md:pb-[120px] md:pt-[240px]&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/section&gt;</span>
+    <span style="color: #888888">&lt;!-- End Header --&gt;</span>
+    
+    <span style="color: #888888">&lt;!-- Start Content --&gt;</span>
+    <span style="color: #007700">&lt;section</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;md:py-[120px] py-20&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/section&gt;</span>
+    <span style="color: #888888">&lt;!-- End Content --&gt;</span>
+
+    <span style="color: #888888">&lt;!-- Start Footer --&gt;</span>
+    <span style="color: #007700">&lt;footer</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;bg-dark&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/footer&gt;</span>
+    <span style="color: #888888">&lt;!-- End Footer --&gt;</span>
+
+    <span style="color: #888888">&lt;!-- All Javascript --&gt;</span>
+    <span style="color: #007700">&lt;script </span><span style="color: #0000CC">type=</span><span style="background-color: #fff0f0">&quot;text/javascript&quot;</span><span style="color: #007700">&gt;</span>
+        .. .. ..
+    <span style="color: #007700">&lt;/script&gt;</span>
+<span style="color: #007700">&lt;/body&gt;</span>
+</pre></div>
+
+                                            </div>
+                                        </div>
+
+		                                <div class="row p-t-20">
+		                                    <div class="col-sm-12 p-t-30">
+		                                        <h4>CSS</h4>
+		                                        <hr/>
+
+		                                        <p class="m-t-20">Files are explained below: </p>
+
+		                                        <table class="table table-bordered m-0">
+		                                            <thead>
+		                                            <tr>
+		                                                <th style="width: 20%;"><i class="ti-file"></i> File</th>
+		                                                <th>Description</th>
+		                                            </tr>
+		                                            </thead>
+		                                            <tbody>
+		                                            <tr>
+		                                                <td>
+		                                                    <code>tailwind.css</code>
+		                                                </td>
+		                                                <td>
+		                                                    Tailwind CSS
+		                                                </td>
+		                                            </tr>
+
+		                                            <tr>
+		                                                <td>
+		                                                    <code>swiper-bundle.min.css</code>
+		                                                </td>
+		                                                <td>
+		                                                    Swiper CSS
+		                                                </td>
+		                                            </tr>
+
+													<tr>
+		                                                <td>
+		                                                    <code>tobii.min.css</code>
+		                                                </td>
+		                                                <td>
+		                                                    Tobii CSS
+		                                                </td>
+		                                            </tr>
+
+													<tr>
+		                                                <td>
+		                                                    <code>accordion.min.css</code>
+		                                                </td>
+		                                                <td>
+		                                                    Accordion Css
+		                                                </td>
+		                                            </tr>
+
+
+		                                            </tbody>
+		                                        </table>
+
+		                                    </div>
+		                                </div>
+		                            </div>
+
+		                            <div class="row">
+		                            	<div class="col-sm-12 p-t-30">
+		                                <h4>Javascript</h4>
+		                                <hr/>
+		                                <p class="m-t-20">Files are explained below: </p>
+
+		                                <table class="table table-bordered m-0">
+		                                    <thead>
+		                                    <tr>
+		                                        <th style="width: 20%;"><i class="ti-file"></i> File</th>
+		                                        <th>Description</th>
+		                                    </tr>
+		                                    </thead>
+		                                    <tbody>
+
+		                                    <tr>
+		                                        <td>
+		                                            <code>js/accordion.min.js</code>
+		                                        </td>
+		                                        <td>
+		                                            Accordion Js
+		                                        </td>
+		                                    </tr>
+											<tr>
+		                                        <td>
+		                                            <code>js/swiper-bundle.min.js</code>
+		                                        </td>
+		                                        <td>
+		                                            Swiper Js
+		                                        </td>
+		                                    </tr>
+											<tr>
+		                                        <td>
+		                                            <code>js/tobii.min.js</code>
+		                                        </td>
+		                                        <td>
+		                                            Tobii Js
+		                                        </td>
+		                                    </tr>
+											<tr>
+		                                        <td>
+		                                            <code>js/vanilla-counter.js</code>
+		                                        </td>
+		                                        <td>
+		                                            Vanilla Counter
+		                                        </td>
+		                                    </tr>
+											<tr>
+		                                        <td>
+		                                            <code>js/custom.js</code>
+		                                        </td>
+		                                        <td>
+		                                            All Custom js files
+		                                        </td>
+		                                    </tr>
+
+		                                    </tbody>
+		                                </table>
+		                            </div>
+
+		                            </div>
+		                        </div>
+
+
+		                        <div id="credits" class="com-container p-t-30">
+		                            <h4 class="page-header">Credits &amp; Official Documentation</h4>
+		                            <p>I've used the following resources as listed. These are some awesome creation and I am
+		                                really thankful to the respective community.</p>
+
+		                            <ul class="">
+		                                <li><a href="https://tailwindcss.com/">Tailwind Css</a></li>
+										<li><a href="https://www.drawkit.com/product/drawkit-classic">Drawkit</a></li>
+										<li><a href="https://github.com/midzer/tobii">Tobii Lightbox</a></li>
+										<li><a href="https://github.com/yunisdev/vanilla-counter">Vanilla Counter</a></li>
+										<li><a href="https://swiperjs.com/">Swiper Js</a></li>
+										<li><a href="https://github.com/michu2k/Accordion">Accordion Js</a></li>
+										<li><a href="https://unsplash.com/">Unsplash</a></li>
+										<li><a href="https://dribbble.com/">Dribbble</a></li>
+										<li><a href="https://www.ls.graphics/free/ui-kit-landing-page">Ui Kit</a></li>
+										<li><a href="https://elements.envato.com/250-minimal-logos-template-7NUHLG">Client Logo</a></li>
+		                            </ul>
+		                        </div>
+
+		                        <div id="support" class="com-container">
+		                            <h4 class="page-header">Support</h4>
+		                            <p class="m-t-20">
+		                                Once again thank you for purchasing the theme. I am always avaialble to help you. If you
+		                                have any suggestion or feature to make it more better, I am requesting you to contact
+		                                me, I'll try my best to add them in future updates.
+		                            </p>
+
+		                            <p>
+		                                Best,
+		                            </p>
+		                            <p class="text-primary">
+		                                - <strong>ThemesBoss</strong>
+		                                - <strong>themesboss@gmail.com</strong>
+		                            </p>
+		                        </div>
+
+		                        <div id="changelog" class="com-container">
+
+
+		                            <p style="text-decoration: underline; font-weight: 900; padding-top:30px;"><strong>Version
+		                                1.0.0
+		                                <small>- 22 January 2023</small>
+		                            </strong></p>
+
+		                            <ul>
+		                                <li>
+		                                    Initial released
+		                                </li>
+		                            </ul>
+
+		                        </div>
+
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		    <!-- /#page-content-wrapper -->
+
+		    <div class="text-center">
+		        <p class="copy">Copyright &copy; 2023 Digity-Theme.</p>
+		    </div>
+		</div>
+		<!-- /#wrapper -->
+
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+
+	</body>
+
+</html>

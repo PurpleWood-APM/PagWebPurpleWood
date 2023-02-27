@@ -1,0 +1,17 @@
+{
+  "name": "digity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i build/tailwind.css -o assets/css/style.css --watch",
+    "build": "npx tailwindcss -i build/tailwind.css -o assets/css/style.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "tailwindcss": "^3.2.4"
+  }
+}
