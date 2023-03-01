@@ -18,9 +18,9 @@ module.exports = {
       transperent: 'transperent',
       current: 'currentColor',
       green: {
-        DEFAULT: "#3EC37D",
-        light: "#EFFFFB",
-        semilight: "#C5EDD8",
+        DEFAULT: "#7E22CE",
+        light: "#E9D5FF",
+        semilight: "#C084FC",
       },
       blue: '#4F98CA',
       dark: {
