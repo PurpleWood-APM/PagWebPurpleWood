@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PurpleWood</title>
+
+        <!-- Site favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+        <!-- Swiper Slider Css -->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+        <!-- Style Css -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body class="antialiased font-poppins text-[15px] leading-7 text-dark bg-[#F5FCF8]">
+        <!-- Start Navbar -->
+        <header class="main-menu">
+            <nav class="fixed top-0 w-full z-50 mobile-menu-bg">
+                <div class="container">
+                    <div class="lg:flex items-center justify-between gap-6">
+                        <div class="flex items-center justify-between">
+                            <a href="index.html">
+                                <img src="assets/images/PurpleWood.png" width="250" class="" alt="logo" />
+                            </a>
+                            <button class="text-end mobile-menu-button lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="navbarNav" class="mobile-menu hidden lg:block">
+                            <ul class="lg:space-x-8 space-y-4 lg:space-y-0 lg:flex items-center mt-6 lg:mt-0 max-[1024px]:max-h-80 max-[1024px]:overflow-scroll">
+                                <li>
+                                    <a href="index.html" class="uppercase text-sm font-medium lg:py-9 tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">
+                                        Inicio
+                                    </a>
+                                </li>
+                                <li class="relative group">
+                                    <a href="modulos.html" class="uppercase text-sm font-medium lg:py-9 tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">
+                                        Módulos
+                                        <span class="ml-1.5">
+                                            <svg width="8" height="6" class="inline-block" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.0466659 0.744778L3.86978 5.53751C3.93301 5.61663 4.06672 5.61663 4.12995 5.53751L7.95348 0.744445C7.99899 0.68712 8.01247 0.601674 7.98793 0.527294C7.98285 0.511735 7.97719 0.499838 7.97245 0.490935C7.94325 0.436855 7.88717 0.403076 7.8256 0.403076H0.174128C0.112893 0.403076 0.0564835 0.436772 0.02753 0.490935C0.0226212 0.500004 0.0169636 0.511985 0.0122212 0.526378C-0.0124892 0.601674 0.000906017 0.687287 0.0466659 0.744778Z"
+                                                    fill="#272727"
+                                                />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <div class="sub-menu">
+                                        <ul>
+                                            <li>
+                                                <a href="gestionProduccion.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Gestión de Producción y Automatización </a>
+                                            </li>
+                                            <li>
+                                                <a href="industria4.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Industria 4.0</a>
+                                            </li>
+                                            <li>
+                                                <a href="planeacion.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Planeación del Proyecto</a>
+                                            </li>
+                                            <li>
+                                                <a href="economica.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Evaluación Económica</a>
+                                            </li>
+                                            <li>
+                                                <a href="celdaManufactura.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Celda de Manufactura Robotizada</a>
+                                            </li>
+                                            <li>
+                                                <a href="digitalFactory.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Digital Factory</a>
+                                            </li>
+                                            <li>
+                                                <a href="plc.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Controladores Industriales (PLC)</a>
+                                            </li>
+                                            <li>
+                                                <a href="comunicaciones.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Comunicaciones</a>
+                                            </li>
+                                            <li>
+                                                <a href="scada.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">SCADA</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="aprendizaje.html" class="uppercase text-sm font-medium lg:py-9 tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">
+                                        Proceso de Aprendizaje
+                                    </a>
+                                </li>
+                                <li class="nav-active">
+                                    <a href="productos.html" class="uppercase text-sm font-medium lg:py-9 tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">
+                                        Productos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="equipo.html" class="uppercase text-sm font-medium lg:py-9 tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">
+                                        Equipo
+                                    </a>
+                                </li>
+                                <a href="https://unal.edu.co/">
+                                    <img src="assets/images/escudoUnal_black.png" width="150" class="" alt="logoUNAL" />
+                                </a>
+                                <!--<a href="contact.html" class="btn-blue navbar-btn lg:!ml-16">Start a project</a>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- End Navbar -->
+
+        <!-- Start Header -->
+        <section class="bg-[url('../images/header-bg.png')] bg-right-top bg-no-repeat bg-cover pt-36 pb-20 md:pb-[120px] md:pt-[240px]">
+            <div class="container">
+                <div class="grid grid-cols-1">
+                    <div class="text-center">
+                        <h2 class="font-semibold text-4xl leading-snug md:text-6xl md:leading-snug lg:text-[70px] lg:leading-[90px]">Productos</h2>
+                        <ul class="mt-2 text-center">
+                            <li class="hover:text-green inline-block tracking-[0.86px] font-medium uppercase duration-300 after:inline-block after:text-green after:mx-1.5 after:top-[2px] after:relative after:content-['/']">
+                                <a href="index.html">Inicio</a>
+                            </li>
+                            <li class="text-dark-semilight inline-block tracking-[0.86px] font-medium uppercase duration-300"><a href="#">Productos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Header -->
+
+        <!-- Start Divider -->
+        <div class="container">
+            <div class="bg-light h-px w-full block"></div>
+        </div>
+        <!-- End Divider -->
+
+        <!-- Start Timeline -->
+        <section class="md:py-[120px] py-20">
+            <div class="container">
+                <div class="grid grid-cols-1">
+                    <div class="relative">
+                        <div class="hidden md:block border-light border-l absolute h-full left-1/2 transform -translate-x-1/2"></div>
+                        <div class="relative">
+                            <div class="flex flex-col md:flex-row items-center">
+                                <div class="flex justify-end w-full mx-auto items-center">
+                                    <div class="w-full md:w-1/2 md:block hidden">
+                                        <img src="assets/images/instagram.svg" class="mx-auto" alt="" />
+                                    </div>
+                                    <div class="w-full md:w-1/2 md:pl-8 lg:pl-[110px]">
+                                        <div class="bg-white p-8 rounded-2xl relative z-10">
+                                            <div class="md:hidden block">
+                                                <img src="assets/images/instagram.png" alt="" />
+                                            </div>
+                                            <h5 class="font-semibold text-[22px] leading-[33px] mt-7 md:mt-0">Branding</h5>
+                                            <p class="text-[15px] leading-7 text-dark-light mt-4">Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="absolute left-1/2 -translate-y-1/2 -translate-x-1/2 top-1/2 md:block hidden">
+                                    <div class="bg-green w-4 h-4 rounded-full"></div>
+                                    <span class="h-px w-[93px] absolute inline-block bg-light -z-20 top-1/2 -translate-y-1/2"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-6 md:mt-[120px] relative">
+                            <div class="flex flex-col md:flex-row items-center">
+                                <div class="flex justify-start w-full mx-auto items-center">
+                                    <div class="w-full md:w-1/2 md:pr-8 lg:pr-[110px]">
+                                        <div class="bg-white p-8 rounded-2xl relative z-10">
+                                            <div class="md:hidden block">
+                                                <img src="assets/images/web-development.png" alt="" />
+                                            </div>
+                                            <h5 class="font-semibold text-[22px] leading-[33px] mt-7 md:mt-0">Development</h5>
+                                            <p class="text-[15px] leading-7 text-dark-light mt-4">Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi</p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full md:w-1/2 md:pr-8 lg:pr-[110px] md:block hidden">
+                                        <img src="assets/images/web-development.svg" class="mx-auto" alt="" />
+                                    </div>
+                                </div>
+                                <div class="absolute left-1/2 -translate-y-1/2 -translate-x-1/2 top-1/2 md:block hidden">
+                                    <div class="bg-green w-4 h-4 rounded-full"></div>
+                                    <span class="h-px w-[93px] absolute inline-block bg-light right-0 -z-20 top-1/2 -translate-y-1/2"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-6 md:mt-[120px] relative">
+                            <div class="flex flex-col md:flex-row items-center">
+                                <div class="flex justify-end w-full mx-auto items-center">
+                                    <div class="w-full md:w-1/2 md:block hidden">
+                                        <img src="assets/images/graphic-designer.svg" class="mx-auto" alt="" />
+                                    </div>
+                                    <div class="w-full md:w-1/2 md:pl-8 lg:pl-[110px]">
+                                        <div class="bg-white p-8 rounded-2xl relative z-10">
+                                            <div class="md:hidden block">
+                                                <img src="assets/images/graphic-designer.png" alt="" />
+                                            </div>
+                                            <h5 class="font-semibold text-[22px] leading-[33px] mt-7 md:mt-0">Design</h5>
+                                            <p class="text-[15px] leading-7 text-dark-light mt-4">Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="absolute left-1/2 -translate-y-1/2 -translate-x-1/2 top-1/2 md:block hidden">
+                                    <div class="bg-green w-4 h-4 rounded-full"></div>
+                                    <span class="h-px w-[93px] absolute inline-block bg-light -z-20 top-1/2 -translate-y-1/2"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12 text-center">
+                        <a href="modulos.html" class="btn-green">Ver todo el proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Timeline -->
+
+        <!-- Start Divider -->
+        <div class="container">
+            <div class="bg-light h-px w-full block"></div>
+        </div>
+        <!-- End Divider -->
+
+        <!-- Start Footer -->
+        <footer class="bg-dark">
+            <div class="container">
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-10 lg:gap-24 md:py-[120px] py-20">
+                    <div class="md:col-span-2 md:border-r border-[#3D3D3D]">
+                        <div class="max-w-xs">
+                            <img src="assets/images/logo-light.svg" alt="" />
+                            <p class="mt-8 text-[15px] leading-7 text-[#7B7B7B]">With more than 20 years of experience we can deliver the best product design</p>
+                            <div class="md:mt-12 mt-8">
+                                <ul class="flex items-center space-x-4">
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/images/fb.svg" alt="" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/images/twiiter.svg" alt="" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/images/linkedin.svg" alt="" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/images/behance.svg" alt="" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:col-span-3">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="text-white">
+                                <p class="font-semibold text-lg leading-7 text-white">Navigation</p>
+                                <ul class="md:mt-8 mt-4 space-y-4">
+                                    <li>
+                                        <a href="#" class="text-[#7B7B7B] hover:text-[#FAFAFA] text-[15px] leading-[22px] duration-300">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-[#7B7B7B] hover:text-[#FAFAFA] text-[15px] leading-[22px] duration-300">
+                                            About
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-[#7B7B7B] hover:text-[#FAFAFA] text-[15px] leading-[22px] duration-300">
+                                            Projects
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-[#7B7B7B] hover:text-[#FAFAFA] text-[15px] leading-[22px] duration-300">
+                                            Blog
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-[#7B7B7B] hover:text-[#FAFAFA] text-[15px] leading-[22px] duration-300">
+                                            Contact
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="text-white">
+                                <p class="font-semibold text-lg leading-7 text-white">Infomation</p>
+                                <ul class="md:mt-8 mt-4 space-y-4">
+                                    <li>
+                                        <a href="#" class="text-[#7B7B7B] hover:text-[#FAFAFA] text-[15px] leading-[22px] duration-300">
+                                            Style Guide
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-[#7B7B7B] hover:text-[#FAFAFA] text-[15px] leading-[22px] duration-300">
+                                            Licensing
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-[#7B7B7B] hover:text-[#FAFAFA] text-[15px] leading-[22px] duration-300">
+                                            Changelog
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="text-white">
+                                <p class="font-semibold text-lg leading-7 text-white">Find Us</p>
+                                <p class="md:mt-8 mt-4 text-[#7B7B7B] text-[15px] leading-[22px]">Greenwich Village & Soho, 10012 New York, USA</p>
+                                <p class="mt-6 text-[#7B7B7B] text-[15px] leading-[22px]">800 123-456</p>
+                                <p class="text-[15px] leading-[22px] text-[#7B7B7B]">digity@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#3D3D3D] h-px w-full block"></div>
+                <div class="grid grid-cols-1">
+                    <div class="py-8">
+                        <p class="text-[#7B7B7B] text-[15px] leading-7">&copy; 2023 Copyright <a href="https://themeforest.net/user/themesboss/portfolio" target="_blank" class="text-[#FAFAFA] font-medium">ThemesBoss.</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <!-- All Javascript -->
+
+        <!-- Swiper Slider JS -->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!-- Custom Js -->
+        <script src="assets/js/custom.js"></script>
+    </body>
+</html>
