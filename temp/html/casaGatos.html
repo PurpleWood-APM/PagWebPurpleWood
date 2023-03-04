@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PurpleWood</title>
+
+        <!-- Site favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+        <!-- Swiper Slider Css -->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+        <!-- Style Css -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body class="antialiased font-poppins text-[15px] leading-7 text-dark bg-[#F5FCF8]">
+        <!-- Start Navbar -->
+        <header class="main-menu">
+            <nav class="fixed top-0 w-full z-50 mobile-menu-bg">
+                <div class="container">
+                    <div class="lg:flex items-center justify-between gap-6">
+                        <div class="flex items-center justify-between">
+                            <a href="index.html">
+                                <img src="assets/images/PurpleWood.png" width="250" class="" alt="logo" />
+                            </a>
+                            <button class="text-end mobile-menu-button lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="navbarNav" class="mobile-menu hidden lg:block">
+                            <ul class="lg:space-x-8 space-y-4 lg:space-y-0 lg:flex items-center mt-6 lg:mt-0 max-[1024px]:max-h-80 max-[1024px]:overflow-scroll">
+                                <li>
+                                    <a href="index.html" class="uppercase text-sm font-medium lg:py-9 tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">
+                                        Inicio
+                                    </a>
+                                </li>
+                                <li class="relative group">
+                                    <a href="modulos.html" class="uppercase text-sm font-medium lg:py-9 tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">
+                                        Módulos
+                                        <span class="ml-1.5">
+                                            <svg width="8" height="6" class="inline-block" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.0466659 0.744778L3.86978 5.53751C3.93301 5.61663 4.06672 5.61663 4.12995 5.53751L7.95348 0.744445C7.99899 0.68712 8.01247 0.601674 7.98793 0.527294C7.98285 0.511735 7.97719 0.499838 7.97245 0.490935C7.94325 0.436855 7.88717 0.403076 7.8256 0.403076H0.174128C0.112893 0.403076 0.0564835 0.436772 0.02753 0.490935C0.0226212 0.500004 0.0169636 0.511985 0.0122212 0.526378C-0.0124892 0.601674 0.000906017 0.687287 0.0466659 0.744778Z"
+                                                    fill="#272727"
+                                                />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <div class="sub-menu">
+                                        <ul>
+                                            <li>
+                                                <a href="gestionProduccion.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Gestión de Producción y Automatización </a>
+                                            </li>
+                                            <li>
+                                                <a href="industria4.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Industria 4.0</a>
+                                            </li>
+                                            <li>
+                                                <a href="planeacion.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Planeación del Proyecto</a>
+                                            </li>
+                                            <li>
+                                                <a href="economica.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Evaluación Económica</a>
+                                            </li>
+                                            <li>
+                                                <a href="celdaManufactura.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Celda de Manufactura Robotizada</a>
+                                            </li>
+                                            <li>
+                                                <a href="digitalFactory.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Digital Factory</a>
+                                            </li>
+                                            <li>
+                                                <a href="enconstruccion.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Controladores Industriales (PLC)</a>
+                                            </li>
+                                            <li>
+                                                <a href="enconstruccion.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Comunicaciones</a>
+                                            </li>
+                                            <li>
+                                                <a href="enconstruccion.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">SCADA</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="aprendizaje.html" class="uppercase text-sm font-medium lg:py-9 tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">
+                                        Proceso de Aprendizaje
+                                    </a>
+                                </li>
+                                <li class="nav-active">
+                                    <a href="productos.html" class="uppercase text-sm font-medium lg:py-9 tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">
+                                        Productos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="equipo.html" class="uppercase text-sm font-medium lg:py-9 tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">
+                                        Equipo
+                                    </a>
+                                </li>
+                                <a href="https://unal.edu.co/">
+                                    <img src="assets/images/escudoUnal_black.png" width="150" class="" alt="logoUNAL" />
+                                </a>
+                                <!--<a href="contact.html" class="btn-blue navbar-btn lg:!ml-16">Start a project</a>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- End Navbar -->
+        <!-- Start Header -->
+        <section class="bg-[url('../images/header-bg.png')] bg-right-top bg-no-repeat bg-cover pt-36 pb-20 md:pb-[120px] md:pt-[240px]">
+            <div class="container">
+                <div class="grid grid-cols-1">
+                    <div class="text-center max-w-[752px] mx-auto">
+                        <h3 class="font-semibold text-4xl leading-snug md:text-5xl md:leading-[62px]">Casa Triangular para Gato</h3>
+                        <ul class="mt-4 text-center">
+                            <li
+                                class="text-dark-semilight inline-block tracking-[0.86px] font-medium uppercase duration-300 after:inline-block after:bg-green after:w-[5px] after:h-[5px] after:rounded-full after:mx-4 after:-top-[3px] after:relative after:content-['']"
+                            >
+                                <a href="index.html">March 3, 2021</a>
+                            </li>
+                            <li class="text-dark-semilight inline-block tracking-[0.86px] font-medium uppercase duration-300"><a href="#">Branding</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Header -->
+
+        <!-- Start Work Detail -->
+        <section class="md:pb-[120px] pb-20">
+            <div class="container">
+                <div class="grid grid-cols-1">
+                    <div>
+                        <div class="relative">
+                            <div class="swiper work-slider relative">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <img src="assets/images/work/detail-1.png" class="rounded-2xl" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <img src="assets/images/work/detail-1.png" class="rounded-2xl" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <img src="assets/images/work/detail-1.png" class="rounded-2xl" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-slider-pagination space-x-4 mt-8 flex items-center justify-center"></div>
+                        </div>
+                        <div class="md:mt-[120px] mt-20 relative max-w-[752px] mx-auto space-y-10 md:space-y-12">
+                            <div class="space-y-6">
+                                <h5 class="font-semibold text-lg">Summary</h5>
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Vivamus laoreet. Praesent turpis. Nunc nulla.Praesent nec nisl a purus blandit viverra. Nullam
+                                    dictum felis eu pede mollis pretium. Curabitur vestibulum aliquam leo. Sed libero. Praesent metus tellus, elementum eu, semper a, adipiscing nec
+                                </p>
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    Vestibulum ullamcorper mauris at ligula. Phasellus consectetuer vestibulum elit. Sed a libero. Vivamus consectetuer hendrerit lacus. Quisque ut nisi.Cum sociis natoque penatibus
+                                </p>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-lg">What we've done</h5>
+                                <div class="mt-6 space-y-2">
+                                    <p class="text-[15px] leading-[22px] text-dark-light">1. Strategic Discovery</p>
+                                    <p class="text-[15px] leading-[22px] text-dark-light">2. Web application redesign & optimization</p>
+                                    <p class="text-[15px] leading-[22px] text-dark-light">3. Mobile application redesign & optimization</p>
+                                    <p class="text-[15px] leading-[22px] text-dark-light">4. Landing page redesign & optimization</p>
+                                    <p class="text-[15px] leading-[22px] text-dark-light">5. Component-based UI-kit</p>
+                                    <p class="text-[15px] leading-[22px] text-dark-light">6. Product Design Sprints to explore new functionality</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-lg">We've got work to do</h5>
+                                <div class="mt-6 space-y-2">
+                                    <p class="text-[15px] leading-7 text-dark-light">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+                                        vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-lg">Level asked as to help</h5>
+                                <div class="mt-6 space-y-2">
+                                    <p class="text-[15px] leading-[22px] text-dark-light">- Take their product look to the next level</p>
+                                    <p class="text-[15px] leading-[22px] text-dark-light">- Fix UX issues in mobile and web application</p>
+                                    <p class="text-[15px] leading-[22px] text-dark-light">- Match their bold vision to the look and experience of the product</p>
+                                    <p class="text-[15px] leading-[22px] text-dark-light">- Provide a visual framework that will help the product team iterate faster</p>
+                                </div>
+                            </div>
+                            <p class="text-[15px] leading-[22px] text-dark-light">
+                                Creating a landing page with clear and targeted messaging was a crucial step in increasing conversions. Together with the Fortun team, we have compiled a new product page structure using the AIDA model and
+                                packed that in a nice cover 🙂
+                            </p>
+                            <div>
+                                <div class="flex md:flex-row flex-col md:items-center gap-2 md:gap-10 max-w-[540px]">
+                                    <div class="flex items-center text-left gap-5 flex-1">
+                                        <h2 class="text-[56px] leading-[72px] font-semibold text-green" data-vanilla-counter data-start-at="0" data-end-at="23" data-time="3000" data-delay="0" data-format="{}"></h2>
+                                        <p class="md:text-[15px] md:leading-[22px] text-lg flex-1">Days to complete the project</p>
+                                    </div>
+                                    <div class="flex items-center text-left gap-5 flex-1">
+                                        <h2 class="text-[56px] leading-[72px] font-semibold text-green" data-vanilla-counter data-start-at="0" data-end-at="15" data-time="3000" data-delay="0" data-format="{}"></h2>
+                                        <p class="md:text-[15px] md:leading-[22px] text-lg flex-1">Team members involved in the process</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Work Detail -->
+
+        <!-- Start Divider -->
+        <div class="container">
+            <div class="bg-light h-px w-full block"></div>
+        </div>
+        <!-- End Divider -->
+
+                <!-- Start Footer -->
+                <footer class="bg-dark">
+                    <div class="container">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-10 lg:gap-24 md:py-[120px] py-20">
+                            <div class="md:col-span-2 md:border-r border-[#3D3D3D]">
+                                <div class="max-w-xs">
+                                    <img src="assets/images/PurpleWood-2.png" alt="" />
+                                    <p class="mt-8 text-[15px] leading-7 text-[#7B7B7B]">Diseñamos y construimos accesorios para tus espacios</p>
+                                </div>
+                            </div>
+                            <div class="md:col-span-3">
+                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                                    <div class="text-white">
+                                        <p class="font-semibold text-lg leading-7 text-white">Navegación</p>
+                                        <ul class="md:mt-8 mt-4 space-y-4">
+                                            <li>
+                                                <a href="#" class="text-[#7B7B7B] hover:text-[#FAFAFA] text-[15px] leading-[22px] duration-300">
+                                                    Inicio
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-[#7B7B7B] hover:text-[#FAFAFA] text-[15px] leading-[22px] duration-300">
+                                                    Módulos
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-[#7B7B7B] hover:text-[#FAFAFA] text-[15px] leading-[22px] duration-300">
+                                                    Proceso de Aprendizaje
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-[#7B7B7B] hover:text-[#FAFAFA] text-[15px] leading-[22px] duration-300">
+                                                    Productos
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-[#7B7B7B] hover:text-[#FAFAFA] text-[15px] leading-[22px] duration-300">
+                                                    Equipo
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+        
+                                    <div class="text-white">
+                                        <p class="font-semibold text-lg leading-7 text-white">Acerca de</p>
+                                        <p class="md:mt-8 mt-4 text-[#7B7B7B] text-[15px] leading-[22px]">El proyecto presentado en esta página web hace parte de los objetivos de aprendizaje de la asignatura Automatización de Procesos de Manufactura</p>
+                                        <p class="mt-6 text-[#7B7B7B] text-[15px] leading-[22px]">Universidad Nacional de Colombia, Sede Bogotá</p>
+                                        <p class="text-[15px] leading-[22px] text-[#7B7B7B]">Departamento de Ingeniería Mecánica y Mecatrónica</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-[#3D3D3D] h-px w-full block"></div>
+                        <div class="grid grid-cols-1">
+                            <div class="py-8">
+                                <p class="text-[#7B7B7B] text-[15px] leading-7">&copy; 2023 Copyright <a href="https://themeforest.net/user/themesboss/portfolio" target="_blank" class="text-[#FAFAFA] font-medium">ThemesBoss.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- End Footer -->
+
+        <!-- All Javascript -->
+
+        <!-- Swiper Slider JS -->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!-- vanilla counter -->
+        <script src="assets/js/vanilla-counter.js"></script>
+
+        <!-- Custom Js -->
+        <script src="assets/js/custom.js"></script>
+
+        <script>
+            // Client Slider
+            var swiper = new Swiper(".work-slider", {
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 24,
+                delay: 3000,
+                autoHeight: true,
+                pagination: {
+                    el: ".work-slider-pagination",
+                    clickable: true,
+                },
+            });
+
+            // VanillaCounter
+            VanillaCounter();
+        </script>
+    </body>
+</html>
