@@ -139,8 +139,17 @@
                         <div class="md:mt-[120px] mt-20 relative max-w-[752px] mx-auto space-y-10 md:space-y-12">
                             <div class="space-y-6">
                                 <p class="text-[15px] leading-7 text-dark-light">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae
-                                    erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet
+                                    SCADA:
+                                </br>
+                                    • En el GitHub colocar el enlace en YouTube del video de la interfaz en el SCADA alojado en la nube supervisando las diferentes variables que se obtienen de la comunicación OPC y MQTT explicado a continuación:
+                                </br>
+                                    En un PC1 se establecerá la comunicación OPC entre Controlador Industrial e Ignition Local 1, en el controlador se deberá correr la lógica del proceso programada en Studio 5000, en donde lee información de sensores virtuales en Siemens NX, se resuelve la lógica de control y se envía accionamientos para que los actuadores virtuales en Siemens NX los ejecuten. El Ignition Local 1 se comunicará por MQTT con Ignition Nube.
+                                </br>
+                                    En un PC2 se establecerá la comunicación OPC entre Siemens NX e Ignition Local 2, en Siemens NX se diseñarán los Sensores y actuadores virtuales. El Ignition Local 2 se comunicará por MQTT con Ignition Nube.
+                                </br>
+                                    Si es necesario o como valor agregado en un PC3 se establecerá comunicación OPC entre alguna otra plataforma Industrial con un Ignition Local. El Ignition Local 3 se comunicará por MQTT con Ignition Nube.
+                                </br>
+                                    • En el GitHub deberán colocar la dirección IP pública para poder visualizar y operar el SCADA alojado en la nube.
                                 </p>
                                 <p class="text-[15px] leading-7 text-dark-light">
                                     Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Vivamus laoreet. Praesent turpis. Nunc nulla.Praesent nec nisl a purus blandit viverra. Nullam
