@@ -137,63 +137,50 @@
             <div class="container">
                 <div class="grid grid-cols-1">
                     <div class="max-w-[752px] mx-auto w-full">
-                        <p class="uppercase font-medium text-sm tracking-[0.84px] after:bg-green-semilight after:absolute after:w-full after:h-2 relative after:left-0 inline-block after:bottom-0 after:-z-10">Last updated: 10/02/2020</p>
-                        <h2 class="font-semibold mt-4 text-4xl leading-snug lg:text-5xl lg:leading-[62px]">Terms & Condition</h2>
+                        <p class="uppercase font-medium text-sm tracking-[0.84px] after:bg-green-semilight after:absolute after:w-full after:h-2 relative after:left-0 inline-block after:bottom-0 after:-z-10">Última Actualización: 18/03/2023</p>
+                        <h2 class="font-semibold mt-4 text-4xl leading-snug lg:text-5xl lg:leading-[62px]">Arquitectura de Conexión</h2>
+                        <img src="assets/images/modulos/industria4/ArquitecturaDeConexion.png" class="rounded-2xl" alt="" />
+                        <div class="mt-12 space-y-6">
+                            <p class="text-dark-light text-[15px] leading-7">
+                                En la imagen se presenta la arquitectura de conexión utilizada en la primera fase del proyecto integrador. Incluye lo siguiente:
+                            </p>
+                            <p class="text-dark-light text-[15px] leading-7">
+                                • <b>red UNAL:</b> Contiene la red privada de PLCs del laboratorio de automatización.
+                            </br>
+                                • <b>red PC 1:</b> Computador personal usado para ejecutar las tareas correspondientes a Studio 5000, Siemens NX, y Robotstudio. Las cuales, entre otros, permiten modificar el estado de los PLC.
+                            </br>
+                                • <b>red PC 2:</b> Computador personal que umple las tareas de monitoreo del estado de los PLC por medio de Ingnition.
+                            </br>
+                                • <b>red PC 3:</b> Un dispositivo con acceso a internet
+                            </br>
+                                • <b>red Cloud:</b> Servicios creados en la nube para monitorear el ambiente de PLCs.
+                            </p>
+                        </div>
+                        <div class="mt-12 space-y-6">
+                            <p class="text-dark-light text-[15px] leading-7">
+                                Las conexiones entre las diferentes redes se hacen de la siguiente manera:
+                            </p>
+                            <p class="text-dark-light text-[15px] leading-7">
+                                • <b>VPN:</b> Para permitir el acceso de PC 1 y PC 2 a la red privada del laboratorio de la Universidad, se realiza una conexión por medio de la VPN Global Protect.
+                            </br>
+                                • <b>HTTP:</b> El acceso a los recursos desplegados en la nube se plantea inicialmente mediante el uso de un protocolo HTTP, que permite ingresar desde cualquier dispositivo con conexión a internet que tenga las credenciales de acceso a la cuenta en la nube. 
+                            </p>
+                        </div>
+
+                        <div class="mt-12 space-y-6">
+                            <p class="text-dark-light text-[15px] leading-7">
+                                <b>Próximamente:</b>
+                            </p>
+                            <p class="text-dark-light text-[15px] leading-7">
+                                • Como se puede ver en la imagen, aún no se define la nube en la cual se va a trabajar. Cuando los requerimientos de servicios en la nube sean definidos en las sesiones que faltan del módulo, se procederá a realizar la selección de un proveedor en la nube, así como el despliegue de los productos.
+                            </p>
+                        </div>
+
                         <div class="mt-12 space-y-6">
                             <p class="text-dark-light text-[15px] leading-7">
                                 Industria 4.0 en la Automatización:
                             </br>
                                 • Imagen de la arquitectura de las comunicaciones que utilizaron en su proyecto integrador.
-                            </p>
-                            <p class="text-dark-light text-[15px] leading-7">
-                                Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Vivamus laoreet. Praesent turpis. Nunc nulla.Praesent nec nisl a purus blandit viverra. Nullam dictum
-                                felis eu pede mollis pretium. Curabitur vestibulum aliquam leo. Sed libero. Praesent metus tellus, elementum eu, semper a, adipiscing nec
-                            </p>
-                            <p class="text-dark-light text-[15px] leading-7">
-                                Vestibulum ullamcorper mauris at ligula. Phasellus consectetuer vestibulum elit. Sed a libero. Vivamus consectetuer hendrerit lacus. Quisque ut nisi.Cum sociis natoque penatibus
-                            </p>
-                        </div>
-                        <div class="mt-12 space-y-2">
-                            <p class="text-[15px] gap-2 leading-[22px] flex items-center">
-                                <span>
-                                    <img src="assets/images/checked.svg" class="inline-block -mt-[2px]" alt="" />
-                                </span>
-                                <span class="flex-1">More than 100+ components </span>
-                            </p>
-                            <p class="text-[15px] gap-2 leading-[22px] flex items-center">
-                                <span>
-                                    <img src="assets/images/checked.svg" class="inline-block -mt-[2px]" alt="" />
-                                </span>
-                                <span class="flex-1">Five ready demos </span>
-                            </p>
-                            <p class="text-[15px] gap-2 leading-[22px] flex items-center">
-                                <span>
-                                    <img src="assets/images/checked.svg" class="inline-block -mt-[2px]" alt="" />
-                                </span>
-                                <span class="flex-1">Coming Soon page</span>
-                            </p>
-                            <p class="text-[15px] gap-2 leading-[22px] flex items-center">
-                                <span>
-                                    <img src="assets/images/checked.svg" class="inline-block -mt-[2px]" alt="" />
-                                </span>
-                                <span class="flex-1">List with check left icon </span>
-                            </p>
-                            <p class="text-[15px] gap-2 leading-[22px] flex items-center">
-                                <span>
-                                    <img src="assets/images/checked.svg" class="inline-block -mt-[2px]" alt="" />
-                                </span>
-                                <span class="flex-1">And much more... </span>
-                            </p>
-                        </div>
-                        <div class="mt-12 space-y-6">
-                            <p class="text-dark-light text-[15px] leading-7">
-                                Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Vivamus laoreet. Praesent turpis. Nunc nulla.Praesent nec nisl a purus blandit viverra. Nullam dictum
-                                felis eu pede mollis pretium. Curabitur vestibulum
-                            </p>
-                            <p class="text-dark-light text-[15px] leading-7">
-                                Praesent ac sem eget est egestas volutpat. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Curabitur suscipit suscipit tellus. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id,
-                                lorem. Etiam rhoncus.Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Vestibulum
-                                purus quam, scelerisque ut, mollis sed, nonummy id, metus
                             </p>
                         </div>
                     </div>
