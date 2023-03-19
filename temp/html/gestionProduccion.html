@@ -87,10 +87,31 @@
                                         Proceso de Aprendizaje
                                     </a>
                                 </li>
-                                <li>
+                                <li class="relative group">
                                     <a href="productos.html" class="uppercase text-sm font-medium lg:py-9 tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">
                                         Productos
+                                        <span class="ml-1.5">
+                                            <svg width="8" height="6" class="inline-block" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.0466659 0.744778L3.86978 5.53751C3.93301 5.61663 4.06672 5.61663 4.12995 5.53751L7.95348 0.744445C7.99899 0.68712 8.01247 0.601674 7.98793 0.527294C7.98285 0.511735 7.97719 0.499838 7.97245 0.490935C7.94325 0.436855 7.88717 0.403076 7.8256 0.403076H0.174128C0.112893 0.403076 0.0564835 0.436772 0.02753 0.490935C0.0226212 0.500004 0.0169636 0.511985 0.0122212 0.526378C-0.0124892 0.601674 0.000906017 0.687287 0.0466659 0.744778Z"
+                                                    fill="#272727"
+                                                />
+                                            </svg>
+                                        </span>
                                     </a>
+                                    <div class="sub-menu">
+                                        <ul>
+                                            <li>
+                                                <a href="mesaOrganizadora.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300"> Mesa Organizadora </a>
+                                            </li>
+                                            <li>
+                                                <a href="repisa.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Repisa Lego</a>
+                                            </li>
+                                            <li>
+                                                <a href="casaGatos.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Casa para gato</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
                                 <li>
                                     <a href="equipo.html" class="uppercase text-sm font-medium lg:py-9 tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">
@@ -128,8 +149,23 @@
             <div class="container">
                 <div class="grid grid-cols-1">
                     <div>
-                        <img src="assets/images/blog/detail-1.png" class="rounded-2xl" alt="" />
+                        <img src="assets/images/productos/productos.png" class="rounded-2xl" alt="" />
                         <div class="md:mt-[120px] mt-20 relative max-w-[752px] mx-auto space-y-10 md:space-y-12">
+
+                            <!-- Selección de Productos -->
+
+                            <div class="border-l-4 border-green pl-6">
+                                <h3 class="font-semibold text-[22px] leading-9">Selección de Productos</h3>
+                            </div>
+                            <div class="space-y-6">
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    En la sección de <b><a href="productos.html" class="text-green" > productos </a></b> se presenta cada uno de los productos seleccionados, incluyendo una imagen del modelo realizado, las dimensiones del mismo, materiales, acabados, función, y proceso de manufactura.
+                                </br> 
+                                    En cuanto a la materia prima, esta se seleccionó según dos criterios: primero la facilidad con la que podría ser transformada y segundo la disponibilidad en el mercado.
+                                </br> 
+                                    Se decide tomar como insumo principal tableros de madera de 122 x 244 cm en distintos calibres. Más adelante se especifica en cada producto el material a usar.
+                                </p>
+                            </div>
 
                             <!-- Reflexion ricardo -->
 
@@ -257,6 +293,21 @@
                                 </p>
                             </div>
 
+                            <!-- Sistema MES -->
+                            <div class="border-l-4 border-green pl-6">
+                                <h3 class="font-semibold text-[22px] leading-9">Sistema MES</h3>
+                            </div>
+                            <div class="space-y-6">
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    Con el fin de tener un sistema de control de supervisión y adquisición de datos, se planea la inclusión de un sistema MES, el cual, permite tener una unión entre el ERP y el sistema SCADA en la pirámide de automatización industrial.
+                                </p>
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    La implementación del sistema MES permite, entre otros, implementar los planes de producción planteados, asignar recursos a cada etapa del proceso, representar gráficamente la planta de producción, capturar datos del sistema SCADA para su posterior análisis, y en general mejorar el proceso de producción, con un enfoque en el producto y las decisiones referentes a la planta.
+                                </p>
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    Para llevar información de la planta al sistema MES, se recogen datos desde los PLCs, el sistema SCADA, y la información proveniente del sistema IoT de la planta. Esto se logra mediante APIs y tarjetas como microcontroladores o tarjetas como raspberry pi.
+                                </p>
+                            </div>
                             <div class="space-y-6">
                                 <p class="text-[15px] leading-7 text-dark-light">
                                     Gestión de Producción y Automatización:
