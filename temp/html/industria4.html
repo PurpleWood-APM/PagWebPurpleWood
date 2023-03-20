@@ -158,7 +158,6 @@
             <div class="container">
                 <div class="grid grid-cols-1">
                     <div class="max-w-[752px] mx-auto w-full">
-                        <p class="uppercase font-medium text-sm tracking-[0.84px] after:bg-green-semilight after:absolute after:w-full after:h-2 relative after:left-0 inline-block after:bottom-0 after:-z-10">Última Actualización: 18/03/2023</p>
                         <h2 class="font-semibold mt-4 text-4xl leading-snug lg:text-5xl lg:leading-[62px]">Arquitectura de Conexión</h2>
                         <img src="assets/images/modulos/industria4/ArquitecturaDeConexion.png" class="rounded-2xl" alt="" />
                         <div class="mt-12 space-y-6">
@@ -185,6 +184,17 @@
                                 • <b>VPN:</b> Para permitir el acceso de PC 1 y PC 2 a la red privada del laboratorio de la Universidad, se realiza una conexión por medio de la VPN Global Protect.
                             </br>
                                 • <b>HTTP:</b> El acceso a los recursos desplegados en la nube se plantea inicialmente mediante el uso de un protocolo HTTP, que permite ingresar desde cualquier dispositivo con conexión a internet que tenga las credenciales de acceso a la cuenta en la nube. 
+                            </p>
+                        </div>
+
+                        <div class="mt-12 space-y-6">
+                            <p class="text-dark-light text-[15px] leading-7">
+                                Como se evidencia en el link de acceso a la página web, un valor agregado dado al sitio es su propio dominio <a href="purplewood.solutions"><b class="text-green">PurpleWood.solutions</b></a>, el cual, además de brindar una URL más amigable y empresarial, permite incluir el modelo de continuous delivery (CD) en el desarrollo de la página. Mediante el modelo CD, cada que se realiza una actualización al repositorio, se actualiza a su vez el despliegue de la página web en el dominio, esto permite realizar cambios continuos y pequeños que se alinean con el modelo SCRUM adoptado para el proyecto, con el cual se realizan múltiples actualizaciones de la página en cada sprint para finalmente llegar al mínimo producto viable (MVP) establecido para el final del sprint.
+                            </p>
+                            <p class="text-dark-light text-[15px] leading-7">
+                                El despliegue de la página web se hace usando la herramienta netlify, la cual compila el código alojado en el repositorio de github y lo presenta al dominio. Una guía completa de cómo se realizó el despliegue de la página web usando un dominio propio se puede encontrar en:
+                            </br>
+                            <a href="https://github.com/PurpleWood-APM/Documentacion-Proyecto/blob/main/Industria-4-0/AsignacionDeDominio.md"><b class="text-green">Guía asignación de dominio</b></a>
                             </p>
                         </div>
 
