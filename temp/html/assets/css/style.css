@@ -1776,6 +1776,18 @@ select{
   top: 88px;
 }
 
+.sub-menu .nav-active > a::after{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: -10;
+  height: 0.5rem;
+  width: 100%;
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(192 132 252 / var(--tw-bg-opacity));
+}
+
 @media (max-width: 1024px) {
   .main-menu .mobile-menu-bg{
     --tw-bg-opacity: 1;
