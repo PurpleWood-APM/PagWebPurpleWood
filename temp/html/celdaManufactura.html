@@ -164,19 +164,216 @@
                             
                             <div class="space-y-6">
                                 <p class="text-[15px] leading-7 text-dark-light">
-                                    Praesent ac sem eget est egestas volutpat. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Curabitur suscipit suscipit tellus. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id,
-                                    lorem. Etiam rhoncus.Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est.
-                                    Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus
+                                    Teniendo en cuenta el bosquejo preliminar de la celda de manufactura robotizada, se realiza una propuesta de distribución de la planta de producción
                                 </p>
+                                <img src="assets/images/modulos/celdaRobotica/Distibución planta.jpeg" class="rounded-2xl" alt="" />
                                 <p class="text-[15px] leading-7 text-dark-light">
-                                    Vestibulum ullamcorper mauris at ligula. Phasellus consectetuer vestibulum elit. Sed a libero. Vivamus consectetuer hendrerit lacus. Quisque ut nisi.Cum sociis natoque penatibus
-                                </p>
-                                <p class="text-[15px] leading-7 text-dark-light">
-                                    Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Vivamus laoreet. Praesent turpis. Nunc nulla.Praesent nec nisl a purus blandit viverra. Nullam
-                                    dictum felis eu pede mollis pretium. Curabitur vestibulum
+                                    Se inicia por definir las areas necesarias para cada uno de los procesos requerridos, por ejemplo para las estaciones de mecanizado (Lijado, corte y CNC) se opta por buscar las dimesiones estandar de un equipo(linea punteadas) y luego agregar un espacio de margen para que el operario pueda desplazarse y trabajar de manera comoda, lon puntos morados representan cuadros de un metro cuadrado y representa el espacio requerido por un operario para trabajar de manera adecada.
+                                </br></br>
+                                    Posteriormente conectamos cada una de estas celdas con bandas transportadoras para facilitar el traslado de lotes entre estaciones. A su vez decidimos aislar los procesos de mecanizado en una parte del espacio, de esta todos los procesos quedarian juntos y dado el caso pordia ser sencillo cmabiar tu orden de manera sencilla en caso de que algun producto lo requiririera, por otro lado todas las fuentes de viruta quedarian en la misma area lo que facilita y favorece el mantener un ambiente limpio, asi como tambien respecto a la generación de ruido. Tambien cabe mencionar que se ubica el deposito de manederas adyacente a el area de mencanizado para disminuir las distancias de traslado.
+                                </br></br>
+                                    Por otro lado se tiene otra sección con los procesos de armado, pintura y barnizado, cadan proceso cuenta con la habitación del proceso y un espacio para el reposo de las piezas todos dispuestos de manera lienal (uno puede pasar de entre procesos consecutivos pasando solo una habitación). Al terminar estos proceos se tiene como salida un producto las partes del mismo (en el caso de la casa de gatos no se entrega armada). Posteiormente pasamos a la linea de inspección de calidad donde se planen usar manipuladores roboticos y sistemas inteligencia y visión artificil para la detección de falllas. Por ultimo se empaqueta usando manipuladores y se almacenan los productos listos.
                                 </p>
                             </div>
 
+                            <div class="border-l-4 border-green pl-6">
+                                <h3 class="font-semibold text-[22px] leading-9">Elección de procesos a automatizar con robótica:</h3>
+                            </div>
+                            <div class="space-y-6">
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    <b>Consideraciones del proceso:</b>
+                                </p>
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    Para hacer una correcta selección de los procesos a automatizar con robótica primero es pertinente recordar ciertos puntos sobre el proceso prodcutivo en el que estamos trabjando.
+                                </br>
+                            </br>
+                                    Recordemos que se opto por una producción basada en lotes donde las materias primas pasan por una serie de procesos y estaciones hasta convertirse en las piezas finales, sin embargo los procesos y estaciones depende de cada pieza y por ende estos procesos son parametrizados y ajustables segun se requiera. Esto le permite al proceso ser flexible, adaptable y escalable; esto dado que se tiene una gran cantidad de parametros ajustables segun los requerimientos que se tengan, lo que permitiria la fabricación de nuevas piezas y productos sin mayores afectaciones a la linea de producción. Se opto por este metodo de manufacura por lotes dada la naturaleza del proyecto y de los productos diseñados.
+                                </br></br>
+                                    Una vez mencionado esto se hace un analisís de distintos procesos, a continuación se exponen los procesos escogidos y las razones que llevaron a esta selección.
+                                </br>
+                                </p>
+                            </div>
+
+                            <div class="space-y-6">
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    <b>Definir criterios de selección:</b>
+                                </p>
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    Para la selección de procesos a automatizar se opta por realizar una matriz de selección, es decir se asignan diferentes criterios. Luego se da un puntaje a cada proceso y se ponderan estos puntajes para la selección final, a continuación se mencionan los criterios que consideraremos:
+                                </br></br>
+                                    - Repetitibilidad: Se refiere a que tan mnotona o repetible es la tarea a realizar
+                                </br>
+                                    - Exigencia respecto a personal capacitado: La tarea requiere personal especifico para su realización.
+                                </br>
+                                    - Flexibilidad: Que tantos cambios presenta la tarea, por ejemplo ajustes respecto a cambios de prodcutos o cambios en ritmos de producción variable.
+                                </br>
+                                    - Volumen: Que volumen de piezas son procesadas.
+                                </br>
+                                    - Factibilidad: Que tanto costo implicaria la automatización con robótica
+                                </br>
+                                    - Impacto: Que nivel de impacto implica el proceso automatizado versus el tradicional
+                                </br>
+                                </p>
+                            </div>
+
+                            <div class="space-y-6">
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    <b>Procesos considerados:</b>
+                                </p>
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    A continuación listamos algunos de los procesos considerados:
+                                </br></br>
+                                    - Dimensionamiento y corte
+                                </br>
+                                    - Fresado y perfilado.
+                                </br>
+                                    - Lijado
+                                </br>
+                                    - Pintura y acabado.
+                                </br>
+                                    - Inspección de calidad.
+                                </br>
+                                    - Traslado de piezas entre bandas.
+                                </br>
+                                </p>
+                            </div>
+
+                            <div class="space-y-6">
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    <b>Matriz de selección:</b>
+                                </p>
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    Se lista cada proceso y el puntaje asignado en cada uno de los criterios, para la ponderación se asigna a cada criterio una cantidad diferente de puntos para una suma de 100, los criterios más importantes son el impacto respectoa la no automatización del proceso, la repetitibilida y la factibilidad de la automatización con robots.
+                                
+                                </p>
+
+                                <p>
+                                    <table>
+                                        <thead>
+                                          <tr>
+                                            <th>Proceso</th>
+                                            <th>Repetitibilidad(20)</th>
+                                            <th>Necesidad P.C.(5)</th>
+                                            <th>Flexibilidad(10)</th>
+                                            <th>Volumen(15)</th>
+                                            <th>Factibilidad (25)</th>
+                                            <th>Impacto(25)</th>
+                                            <th>Total(100)</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>Dimensionamiento y corte</td>
+                                            <td>10</td>
+                                            <td>5</td>
+                                            <td>8</td>
+                                            <td>8</td>
+                                            <td>5</td>
+                                            <td>10</td>
+                                            <td>46</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Fresado y perfilado</td>
+                                            <td>12</td>
+                                            <td>5</td>
+                                            <td>7</td>
+                                            <td>5</td>
+                                            <td>5</td>
+                                            <td>10</td>
+                                            <td>44</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Lijado</td>
+                                            <td>8</td>
+                                            <td>5</td>
+                                            <td>5</td>
+                                            <td>12</td>
+                                            <td>5</td>
+                                            <td>15</td>
+                                            <td>50</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Pintura y acabado</td>
+                                            <td>8</td>
+                                            <td>4</td>
+                                            <td>9</td>
+                                            <td>12</td>
+                                            <td>15</td>
+                                            <td>15</td>
+                                            <td>63</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Inspección de calidad</td>
+                                            <td>17</td>
+                                            <td>5</td>
+                                            <td>8</td>
+                                            <td>13</td>
+                                            <td>22</td>
+                                            <td>20</td>
+                                            <td>85</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Traslado de piezas</td>
+                                            <td>18</td>
+                                            <td>1</td>
+                                            <td>8</td>
+                                            <td>13</td>
+                                            <td>25</td>
+                                            <td>20</td>
+                                            <td>85</td>
+                                          </tr>
+                                        </tbody>
+                                        </table>
+                                </p>
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    • Respecto a la repetitibilidad se le asignan puntajes mas altos a los procesos de inspección de calidad y translado de piezas dado que estos procesos no se ven modificados en mayor medida por el cambio de pieza o producto
+                                </br>
+                                    • Respecto a la necesidad de personal capacitado todos los procesos relacionados con el maquinado de las piezas y la inspección de calidad requieren personal dado que pueden generar afectaciones a la integridad del trabajador o de la pieza. Por otro lado se considera que el traslado de las piezas no requiere personal altamente capacitado
+                                </br>
+                                    • Respecto a la flexibilidad de los procesos a todos se les asigna un puntaje similar dado que al tratarse de una producción basada en lotes todos requieren ajustes de parametros segun la pieza o producto. La diferencia de puntaje se asigna segun la magnitud de los cambios requeridos
+                                </br>
+                                    • Respecto al volumen se asigna mayor puntaje a los procesos que actuan como cuelllos de botella: Por ejemplo mientras que la entrada a corte es un tablero de madera y sale un lote completo de piezas, el lijado y la inspección de calidad se hace pieza a pieza o producto a producto
+                                </br>
+                                    • Respecto a la factibilidad se asigna mayor puntaje a los procesos de inspección de calidad y traslado de peizas dado que son procesos de pick and place por lo que no requieren equipos altamente especializados ni que requieran mayores intervenciones sobre el espacio, a diferencia de los robots necesarios para los otros procesos
+                                </br>
+                                    • El impacto respecto al traslado de piezas y la inspección de calidad se hace en comparación a un operario, por lo que se tienen puntajes mas altos, por otro lado el fresado y corte si bien requieren un operario para el setup, el corte y fresado es realizado por maquinas CNC
+                                </br>
+                                </p>
+                            </div>
+
+                            <div class="border-l-4 border-green pl-6">
+                                <h3 class="font-semibold text-[22px] leading-9">Comentarios respecto a los procesos:</h3>
+                                <p>
+                                    Teniendo lo anterior en cuenta los dos procesos seleccionados son el traslado de productos entre bandas y la inspección de calidad, a continuación exponemos algunas cosideraciones adicionales respecto a esos dos procesos.
+                                </p>
+                            </div>
+
+                            <div class="space-y-6">
+
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    <b>Inspección de Calidad</b>
+                                </p>
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    Nuestros productos a diferencia otros no tiene grandes requrimientos mecanicos, sin embargo la parte estetica es muy importante dado que es la que mas se relaciona con la calidad en productos de este nicho. Sin embargo la estetica no es algo que se pueda medir facilmente y a su vez estas medidas no serian objetivas si no que dependerian de la persona en cuestion. Una posible opción es tener un personal capacitado para esta tarea, sin mebargo consideramos que otra solución mas adecuada, econoica y escalable es la implementación de un proceso robotizado basado en visión artificial. De esta manera podemos asegurar una metrica objetiva que ademas puede ser reprogramada segun requiera el usuario (cambios de color, textura, pieza, etc)
+                                </br></br>
+                                    Por otro lado se tiene un proceso con bastantes factores variables, diferentes piezas, diferentes productos, posibilidad de diferentes colores. Esta información y variabilidad puede ser perfectamente procesada por un sistema robótico sin afectación alguna al proceso de producción. Esto sumado a que con estas implementaciones se eliminara el error humano en esta etapa contribuyendo a una mejor calidad global.
+                                </br></br>
+                                    Así mismo es importante considerar el ritmo de producción que se tiene, pudiendo ser este variable consideramos que un sistema robotico podria responder de mejor manera estos cambios en volumen y velocidad de producción.
+                                </p>
+                            </div>
+
+                            <div class="space-y-6">
+
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    <b>Traslado de productos</b>
+                                </p>
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    Esta es una tarea sencilla pero altamente repetitiva y monotona, a su vez como en el caso de la isnpección de calidad esta sujeta a cambios en la velocidad y volumen de producción. Por ende se considera adecuada para automatización con robots, dado que la complejidad de su implementación seria baja y el operario podria ser mejor empleado en otras partes del proceso donde la automatización no sea viable y el trabajo manual sea estrictamente necesario.
+                                </p>
+                            </div>
+
+                            <!-- Rubrica -->
+                            <!--
                             <div class="space-y-6">
                                 <p class="text-[15px] leading-7 text-dark-light">
                                     Celda de Manufactura Robotizada:
@@ -190,6 +387,8 @@
                                     • Identificación de peligros y gestión del riesgo, análisis de riesgos inicial, medidas propuestas para mitigación del riesgo y evaluación de riesgos con las medidas aplicadas.
                                 </p>
                             </div>
+                            -->
+                            <!-- Rubrica -->
                         </div>
                     </div>
                 </div>
