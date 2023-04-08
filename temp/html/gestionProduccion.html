@@ -324,7 +324,7 @@
 
                             <!-- Diagrama VSM -->
                             <p class="text-[15px] leading-7 text-dark-light">
-                                <b>Construcción del diagrama VSM</b>
+                                <b>Cálculos generales: Demanda, Takt Time</b>
                                 </br> 
                                 Se realizan los cálculos del tiempo disponible en la planta de producción, teniendo en cuenta la cantidad de turnos al día, días de trabajo, tiempos de descanso, entre otros.
                                 </br>
@@ -339,6 +339,14 @@
                                 </br> 
                                 Se puede ver que el tiempo disponible por día son 24000 segundos o 6.67 horas.
                                 </br>
+                                Se calcula la cantidad de tableros exactos para cada lote de producción al mes, según la demanda de cada producto:
+                                </br>
+                                <img src="assets/images/modulos/gestionproduccion/tablasalmes.png" alt="" width="300"/>
+                            </p>
+
+                            <p class="text-[15px] leading-7 text-dark-light">
+                                <b>Productos-Procesos</b>
+                                </br> 
                                 Además, se genera la tabla de procesos necesarios para la producción de cada artículo. Con esto se tiene una clasificación adecuada de los productos, los cuáles comparten más del 70% de los procesos.
                             </p>
 
@@ -347,18 +355,98 @@
                             </div>
 
                             <p class="text-[15px] leading-7 text-dark-light">
+                                <b>Disponibilidad</b>
+                                </br> 
+                                Se investiga sobre la disponibilidad de cada máquina a usar durante la producción; para esto se investiga sobre la industria de madera en artículos o páginas de proveedores, con esto se puede definir una disponibilad teórica. Se usan las siguentes fórmulas:
+                            </p>
+                            <div>
+                                <img src="assets/images/modulos/gestionproduccion/formula1.png" alt="" width="500"/>
+                            </br>
+                                <img src="assets/images/modulos/gestionproduccion/formula2.png" alt="" width="500"/>
+                            </div>
+
+                            <p class="text-[15px] leading-7 text-dark-light">
+                                </br> 
+                                Se calcula la disponibilidad de las máquinas de los procesos:
+                            </p>
+
+                            <div>
+                                <img src="assets/images/modulos/gestionproduccion/disponibilidadprocesos.png" alt="" />
+                            </div>
+
+                            <p class="text-[15px] leading-7 text-dark-light">
+                            </br> 
+                            Los datos para los cálculos son obtenidos de las siguientes referencias:
+                            </br>
+                            - <a href="https://8pfs.short.gy/DDXFfT" class="text-green" target="_blank">Sierra</a>
+                            </br>
+                            - <a href="http://tangara.uis.edu.co/biblioweb/tesis/2015/157836.pdf" class="text-green" target="_blank">Fresadora CNC</a>
+                            </br>
+                            - <a href="https://www.woodworkhubby.com/how-long-do-router-bits-last/" class="text-green" target="_blank">Router para madera</a>
+                            </br>
+                            - <a href="https://labois.com/madera/limas-escofinas-carpinteria-madera/" class="text-green" target="_blank">Limas para madera</a>
+                            </br>
+                            - <a href="https://powdertronic.com/principales-partes-y-mantenimiento-de-una-pistola-para-pintar/" class="text-green" target="_blank">Barnizado</a>
+                            </br>
+                            - <a href="https://www.dempro.co/post/cada-cuanto-se-deben-hacer-los-mantenimientos-en-los-robots-kuka" class="text-green" target="_blank">Robot KUKA</a>
+                            </p>
+
+                            <p class="text-[15px] leading-7 text-dark-light">
+                                <b>Diagrama VSM</b>
+                            </p>
+
+                            <p class="text-[15px] leading-7 text-dark-light">
                             Con estos datos se procede a realizar el digrama VSM o Value Stream Mapping, contando con la información de la demanda, tiempos de los procesos previamente mostrados <a href="https://github.com/PurpleWood-APM/Documentacion-Proyecto/blob/main/gestion-produccion/TiemposEstimadosProduccion.md" class="text-green" target="_blank">(Documento tiempos estimados por proceso) </a>, disponibilidad de las máquinas para cada proceso y los diagramas de flujo detallados para cada producto <a href="https://github.com/PurpleWood-APM/Documentacion-Proyecto/tree/main/gestion-produccion/esquemas-SeleccionDeProductos" class="text-green" target="_blank">(Diagramas de flujo)</a>.
                             </p>
 
 
                             <div>
-                                <img src="assets/images/modulos/gestionproduccion/VSM.png" class="rounded-2xl" alt="" />
+                                <a href="https://lucid.app/lucidchart/22ce5c2b-ee08-4e71-a5f5-4fa62de4c11d/edit?viewport_loc=-34%2C27%2C3483%2C1503%2C0_0&invitationId=inv_8d96285d-1d1e-4bef-90a1-d884c3b4282a" target="_blank"><img src="assets/images/modulos/gestionproduccion/VSM.png" class="rounded-2xl" alt="" /></a>
+                                <a href="https://lucid.app/lucidchart/22ce5c2b-ee08-4e71-a5f5-4fa62de4c11d/edit?viewport_loc=-34%2C27%2C3483%2C1503%2C0_0&invitationId=inv_8d96285d-1d1e-4bef-90a1-d884c3b4282a" class="text-green" target="_blank">Click para ver con mayor detalle</a>
                             </div>
 
                             <p class="text-[15px] leading-7 text-dark-light">
                                 Se identifican momentos clave para el inventario de productos intermedios necesarios para otros procesos posteriores e inventario de los productos terminados. Además, se encuentran el tiempo o plazo total de producción LT = 21 minutos y el tiempo de valor añadido VA = 33 horas.
                             </p>
-                            
+
+                            <!-- KPI -->
+                            <div class="border-l-4 border-green pl-6">
+                                <h3 class="font-semibold text-[22px] leading-9">KPIs</h3>
+                            </div>
+                            <div class="space-y-6">
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    En la siguiente tabla se presentan los indicadores clave de desempeño que se tendrán en cuenta en la planta de producción:
+                                </p>
+                                <img src="assets/images/modulos/gestionproduccion/KPIs.png" alt="" />
+                            </div>
+
+                            <!-- Simulaciones -->
+                            <div class="border-l-4 border-green pl-6">
+                                <h3 class="font-semibold text-[22px] leading-9">Simulaciones</h3>
+                            </div>
+                            <div class="space-y-6">
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    <b>Process Analysis</b>
+                                </p>
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    Se realiza la simulación de los proceos de produciión en el software Process Analysis, en el cuál se registran los procesos con características ya registradas en <a href="https://github.com/PurpleWood-APM/Documentacion-Proyecto/blob/main/gestion-produccion/TiemposEstimadosProduccion.md" class="text-green" target="_blank">Documento tiempos estimados por proceso </a> y <a href="https://github.com/PurpleWood-APM/Documentacion-Proyecto/blob/main/gestion-produccion/DiagramaVSM.md" class="text-green" target="_blank">Cálculos para el diagrama VSM</a>.
+                                </p>
+                                <img src="assets/images/modulos/gestionproduccion/processanalysis.png" alt="" />
+                                <img src="assets/images/modulos/gestionproduccion/processanalysis2.png" alt="" />
+
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    Por problemas técnicos con el software, se realiza la correspondiente simulación en Tecnomatix.
+                                </p>
+
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    <b>Tecnomatix</b>
+                                </p>
+                                <img src="assets/images/modulos/gestionproduccion/teknomatix.png" alt="" />
+
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    Se realiza el diseño de la planta preliminar en Tecnomatix, para poder realizar simulaciones y análisis del rendimiento, además de tener una perspectiva visual del espacio de la planta. <a href="https://github.com/PurpleWood-APM/Documentacion-Proyecto/blob/main/gestion-produccion/Planta.spp" class="text-green" target="_blank">(Archivo de Tecnomatix) </a>
+                                </p>
+                            </div>
 
                             <!-- Sistema MES -->
                             <div class="border-l-4 border-green pl-6">
@@ -375,6 +463,9 @@
                                     Para llevar información de la planta al sistema MES, se recogen datos desde los PLCs, el sistema SCADA, y la información proveniente del sistema IoT de la planta. Esto se logra mediante APIs y tarjetas como microcontroladores o tarjetas como raspberry pi.
                                 </p>
                             </div>
+
+                            <!-- Rubrica -->
+                            <!--
                             <div class="space-y-6">
                                 <p class="text-[15px] leading-7 text-dark-light">
                                     Gestión de Producción y Automatización:
@@ -386,7 +477,8 @@
                                 • Propuesta de cómo llevar información de la planta a un sistema MES.
                                 </p>
                             </div>
-                            
+                            -->
+                            <!-- Rubrica -->
                             
                         </div>
                     </div>
