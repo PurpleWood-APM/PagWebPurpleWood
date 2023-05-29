@@ -38,7 +38,7 @@
                                         Inicio
                                     </a>
                                 </li>
-                                <li class="relative group nav-active">
+                                <li class="relative group">
                                     <a href="modulos.html" class="uppercase text-sm font-medium lg:py-9 tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">
                                         Módulos
                                         <span class="ml-1.5">
@@ -61,7 +61,7 @@
                                             <li>
                                                 <a href="planeacion.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Planeación del Proyecto</a>
                                             </li>
-                                            <li class="nav-active">
+                                            <li>
                                                 <a href="economica.html" class="uppercase text-sm font-medium tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">Evaluación Económica</a>
                                             </li>
                                             <li>
@@ -121,7 +121,7 @@
                                         Equipo
                                     </a>
                                 </li>
-                                <li>
+                                <li class="nav-active">
                                     <a href="ignition.html" class="uppercase text-sm font-medium lg:py-9 tracking-[0.86px] text-dark-semilight relative hover:text-dark duration-300">
                                         Ignition
                                     </a>
@@ -144,7 +144,15 @@
             <div class="container">
                 <div class="grid grid-cols-1">
                     <div class="text-center max-w-[752px] mx-auto">
-                        <h3 class="font-semibold text-4xl leading-snug md:text-5xl md:leading-[62px]">Evaluación Económica</h3>
+                        <h3 class="font-semibold text-4xl leading-snug md:text-5xl md:leading-[62px]">IGNITION</h3>
+                        <ul class="mt-4 text-center">
+                            <li
+                                class="text-dark-semilight inline-block tracking-[0.86px] font-medium uppercase duration-300 after:inline-block after:bg-green after:w-[5px] after:h-[5px] after:rounded-full after:mx-4 after:-top-[3px] after:relative after:content-['']"
+                            >
+                                <a href="blog.html">March 12, 2021</a>
+                            </li>
+                            <li class="text-dark-semilight inline-block tracking-[0.86px] font-medium uppercase duration-300"><a href="#">By Henry Dege</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -160,20 +168,40 @@
                         <div class="md:mt-[120px] mt-20 relative max-w-[752px] mx-auto space-y-10 md:space-y-12">
                             <div class="space-y-6">
                                 <p class="text-[15px] leading-7 text-dark-light">
-                                    Evaluación Económica de Proyectos:
+                                    SCADA:
                                 </br>
-                                    • Hoja Excel en donde se evidencie los indicadores VPN, TIR y Payback como sustento para ver si el proyecto es económicamente viable.
+                                    • En el GitHub colocar el enlace en YouTube del video de la interfaz en el SCADA alojado en la nube supervisando las diferentes variables que se obtienen de la comunicación OPC y MQTT explicado a continuación:
                                 </br>
-                                    • Oferta comercial amigable en donde se ofrezca la solución.
+                                    En un PC1 se establecerá la comunicación OPC entre Controlador Industrial e Ignition Local 1, en el controlador se deberá correr la lógica del proceso programada en Studio 5000, en donde lee información de sensores virtuales en Siemens NX, se resuelve la lógica de control y se envía accionamientos para que los actuadores virtuales en Siemens NX los ejecuten. El Ignition Local 1 se comunicará por MQTT con Ignition Nube.
+                                </br>
+                                    En un PC2 se establecerá la comunicación OPC entre Siemens NX e Ignition Local 2, en Siemens NX se diseñarán los Sensores y actuadores virtuales. El Ignition Local 2 se comunicará por MQTT con Ignition Nube.
+                                </br>
+                                    Si es necesario o como valor agregado en un PC3 se establecerá comunicación OPC entre alguna otra plataforma Industrial con un Ignition Local. El Ignition Local 3 se comunicará por MQTT con Ignition Nube.
+                                </br>
+                                    • En el GitHub deberán colocar la dirección IP pública para poder visualizar y operar el SCADA alojado en la nube.
+                                </p>
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Vivamus laoreet. Praesent turpis. Nunc nulla.Praesent nec nisl a purus blandit viverra. Nullam
+                                    dictum felis eu pede mollis pretium. Curabitur vestibulum aliquam leo. Sed libero. Praesent metus tellus, elementum eu, semper a, adipiscing nec
                                 </p>
                             </div>
-                            <!-- Texto resaltado-->
-                            <!--
                             <div class="border-l-4 border-green pl-6">
                                 <h3 class="font-semibold text-[22px] leading-9">A rich text element can be used with static or dynamic content For static content, just drop it into any page</h3>
                             </div>
-                            -->
-                            <!-- Texto resaltado -->
+                            <div class="space-y-6">
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    Praesent ac sem eget est egestas volutpat. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Curabitur suscipit suscipit tellus. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id,
+                                    lorem. Etiam rhoncus.Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est.
+                                    Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus
+                                </p>
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    Vestibulum ullamcorper mauris at ligula. Phasellus consectetuer vestibulum elit. Sed a libero. Vivamus consectetuer hendrerit lacus. Quisque ut nisi.Cum sociis natoque penatibus
+                                </p>
+                                <p class="text-[15px] leading-7 text-dark-light">
+                                    Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Vivamus laoreet. Praesent turpis. Nunc nulla.Praesent nec nisl a purus blandit viverra. Nullam
+                                    dictum felis eu pede mollis pretium. Curabitur vestibulum
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -187,7 +215,7 @@
         </div>
         <!-- End Divider -->
 
-        <!-- Start Footer -->
+         <!-- Start Footer -->
         <footer class="bg-dark">
             <div class="container">
                 <div class="grid grid-cols-1 md:grid-cols-5 gap-10 lg:gap-24 md:py-[120px] py-20">
