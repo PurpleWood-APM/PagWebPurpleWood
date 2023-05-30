@@ -170,34 +170,25 @@
                         <img src="assets/images/modulos/industria4/ArquitecturaDeConexion.png" class="rounded-2xl" alt="" />
                         <div class="mt-12 space-y-6">
                             <p class="text-dark-light text-[15px] leading-7">
-                                En la imagen se presenta la arquitectura de conexión utilizada en la primera fase del proyecto integrador. Incluye lo siguiente:
+                                En la imagen se presenta la arquitectura final de conexión planteada para el proyecto integrador. Incluye lo siguiente:
                             </p>
                             <p class="text-dark-light text-[15px] leading-7">
-                                • <b>red UNAL:</b> Contiene la red privada de PLCs del laboratorio de automatización.
+                                • <b>red Enterprise:</b> Contiene la red privada de la planta de producción, con el PLC de dirección IP privada 10.203.3.247.
                             </br>
-                                • <b>red PC 1:</b> Computador personal usado para ejecutar las tareas correspondientes a Studio 5000, Siemens NX, y Robotstudio. Las cuales, entre otros, permiten modificar el estado de los PLC.
+                                • <b>red PC 1:</b> Red donde se encuentra un computador personal usado para ejecutar los modelos y simulaciones correspondientes a Studio 5000 y Siemens NX. Por medio de comunicaciones OPC envía tags al contenedor de ignition, el cual a su vez envía la información al PLC en la red enterprise por medio del protocolo MQTT, a través de una conexión VPN de GlobalProtect.
                             </br>
-                                • <b>red PC 2:</b> Computador personal que umple las tareas de monitoreo del estado de los PLC por medio de Ingnition.
+                                • <b>red PC 2:</b> Red donde se encuentra un computador personal usado para ejecutar los modelos y simulaciones correspondientes a RobotStudio. Realiza las comunicaciones OPC y MQTT de la misma forma que la red PC 1.
                             </br>
-                                • <b>red PC 3:</b> Un dispositivo con acceso a internet
+                                • <b>red Pública:</b> Corresponde al internet público, al cual se conectan todas las redes ya mencionadas, así como cualquier dispositivo con acceso a internet por medio de ethernet o WiFi, como es el caso del PC3, con un usuario que acceda a visualizar la información de la planta. En esta red se encuentra desplegado un servicio de IBM Cloud Internet Services (CIS), el cual intercepta todo el tráfico dirigido al dominio purplewood.solutions por medio de los servicios DNS, cumpliendo funciones de seguridad que incluyen Web Application Firewall (WAF) y protección contra ataques DDoS. El uso del CIS permite un acceso por protocolo HTTPS a las páginas web de la planta, incluyendo certificados de seguridad que pueden verse en la configuración del navegador:
+                                <img src="assets/images/modulos/industria4/certificado.png" width="400" alt="" />
                             </br>
-                                • <b>red Cloud:</b> Servicios creados en la nube para monitorear el ambiente de PLCs.
-                            </p>
-                        </div>
-                        <div class="mt-12 space-y-6">
-                            <p class="text-dark-light text-[15px] leading-7">
-                                Las conexiones entre las diferentes redes se hacen de la siguiente manera:
-                            </p>
-                            <p class="text-dark-light text-[15px] leading-7">
-                                • <b>VPN:</b> Para permitir el acceso de PC 1 y PC 2 a la red privada del laboratorio de la Universidad, se realiza una conexión por medio de la VPN Global Protect.
-                            </br>
-                                • <b>HTTP:</b> El acceso a los recursos desplegados en la nube se plantea inicialmente mediante el uso de un protocolo HTTP, que permite ingresar desde cualquier dispositivo con conexión a internet que tenga las credenciales de acceso a la cuenta en la nube. 
+                                • <b>red IBM Cloud:</b> contiene un clúster de IBM Cloud Kubernetes Service desplegado con un worker node de 2vCPU x 4 GB RAM, en el cual se encuentran las aplicaciones correspondientes a ignition y la página web de Purplewood. Para el acceso a ignition se incluye un redireccionamiento usando el servicio DNS del CIS, para poder presentar tanto Ignition Gateway como el HMI en la URL ignition.purplewood.solutions
                             </p>
                         </div>
 
                         <div class="mt-12 space-y-6">
                             <p class="text-dark-light text-[15px] leading-7">
-                                Como se evidencia en el link de acceso a la página web, un valor agregado dado al sitio es su propio dominio <a href="purplewood.solutions"><b class="text-green">PurpleWood.solutions</b></a>, el cual, además de brindar una URL más amigable y empresarial, permite incluir el modelo de continuous delivery (CD) en el desarrollo de la página. Mediante el modelo CD, cada que se realiza una actualización al repositorio, se actualiza a su vez el despliegue de la página web en el dominio, esto permite realizar cambios continuos y pequeños que se alinean con el modelo SCRUM adoptado para el proyecto, con el cual se realizan múltiples actualizaciones de la página en cada sprint para finalmente llegar al mínimo producto viable (MVP) establecido para el final del sprint.
+                                Como se evidencia en el link de acceso a la página web, la página web tiene su propio dominio <a href="purplewood.solutions"><b class="text-green">PurpleWood.solutions</b></a>, el cual, además de brindar una URL más amigable y empresarial, permite incluir el modelo de continuous delivery (CD) en el desarrollo de la página. Mediante el modelo CD, cada que se realiza una actualización al repositorio, se actualiza a su vez el despliegue de la página web en el dominio, esto permite realizar cambios continuos y pequeños que se alinean con el modelo SCRUM adoptado para el proyecto, con el cual se realizan múltiples actualizaciones de la página en cada sprint para finalmente llegar al mínimo producto viable (MVP) establecido para el final del sprint.
                             </p>
                             <p class="text-dark-light text-[15px] leading-7">
                                 El despliegue de la página web se hace usando la herramienta netlify, la cual compila el código alojado en el repositorio de github y lo presenta al dominio. Una guía completa de cómo se realizó el despliegue de la página web usando un dominio propio se puede encontrar en:
@@ -206,14 +197,6 @@
                             </p>
                         </div>
 
-                        <div class="mt-12 space-y-6">
-                            <p class="text-dark-light text-[15px] leading-7">
-                                <b>Próximamente:</b>
-                            </p>
-                            <p class="text-dark-light text-[15px] leading-7">
-                                • Como se puede ver en la imagen, aún no se define la nube en la cual se va a trabajar. Cuando los requerimientos de servicios en la nube sean definidos en las sesiones que faltan del módulo, se procederá a realizar la selección de un proveedor en la nube, así como el despliegue de los productos.
-                            </p>
-                        </div>
                         <!-- rubrica -->
                         <!--
                         <div class="mt-12 space-y-6">
