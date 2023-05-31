@@ -158,32 +158,91 @@
                     <div>
                         <img src="assets/images/modulos/comunicaciones/Arquitectura de Conexion con piramide y mes.png" class="rounded-2xl" alt="" />
                         <div class="md:mt-[120px] mt-20 relative max-w-[752px] mx-auto space-y-10 md:space-y-12">
-                            <div class="space-y-6">
-                                <p class="text-[15px] leading-7 text-dark-light">
-                                    Comunicaciones
-                                </br>
-                                    • Descripción de las comunicaciones utilizadas para el proyecto, identificando protocolos, canales, niveles de la pirámide de automatización donde son utilizadas.
-                                </p>
-                                <p class="text-[15px] leading-7 text-dark-light">
-                                    Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Vivamus laoreet. Praesent turpis. Nunc nulla.Praesent nec nisl a purus blandit viverra. Nullam
-                                    dictum felis eu pede mollis pretium. Curabitur vestibulum aliquam leo. Sed libero. Praesent metus tellus, elementum eu, semper a, adipiscing nec
-                                </p>
-                            </div>
                             <div class="border-l-4 border-green pl-6">
-                                <h3 class="font-semibold text-[22px] leading-9">A rich text element can be used with static or dynamic content For static content, just drop it into any page</h3>
+                                <h3 class="font-semibold text-[22px] leading-9">Comunicaciones utilizadas en el proyecto de automatización</h3>
                             </div>
                             <div class="space-y-6">
-                                <p class="text-[15px] leading-7 text-dark-light">
-                                    Praesent ac sem eget est egestas volutpat. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Curabitur suscipit suscipit tellus. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id,
-                                    lorem. Etiam rhoncus.Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est.
-                                    Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus
+                                Para el proyecto se plantea el uso de diferentes comunicaciones para interconectar los dispositivos, sensores, actuadores y sistemas involucrados. A continuación, presentamos una breve descripción de estas comunicaciones, incluyendo los protocolos, canales y el nivel de la pirámide de automatización donde se utilizan.
+                            </br>
+                                <p >
+                                    <b>Comunicación de PLC con Dispositivos/Sensores/Actuadores (Dispositvos y sensores de proceso):</b></br></br>
+
+                                    <b>Protocolo:</b> Se planea el uso de Profibus
+                                </br>
+                                    <b>Canales:</b> La conexión física entre el PLC y los dispositivos se realizara con cables Ethernet. Sin embargo cabe mencionar que en algunos casos, se pueden requerir cables específicos o adaptadores según indique el dispositivo.
+                                </br>
+                                    <b>Niveles de la pirámide de automatización:</b> Esta comunicación ocurre a nivel de campo, donde se encuentran los sensores y actuadores. estableciendo asi una comunicación entre el nivel de control (PLC) y el nivel de campo (dispositivos/sensores/actuadores).
+
                                 </p>
-                                <p class="text-[15px] leading-7 text-dark-light">
-                                    Vestibulum ullamcorper mauris at ligula. Phasellus consectetuer vestibulum elit. Sed a libero. Vivamus consectetuer hendrerit lacus. Quisque ut nisi.Cum sociis natoque penatibus
+                                <p >
+                                    <b>Comunicación PLC - CNC (Corte y fresado de piezas):</b></br></br>
+
+                                    <b>Protocolo:</b> Dado que no se realiza la selección final de la maquina se desconoce el protocolo o esquema de comunicaciones requerido por el fabricante, sin embargo se consideran distintos protocolos como FANUC, Mazatrol o Heidenhain.
+                                </br>
+                                    <b>Canales:</b> Se plantea que la conexión entre el PLC y el CNC se realize a través de cables Ethernet o cables específicos adaptados al protocolo y la interfaz del CNC.
+                                </br>
+                                    <b>Niveles de la pirámide de automatización:</b> Esta comunicación ocurre entre el nivel de campo (CNC) y el nivel de control (PLC)
+
+
                                 </p>
-                                <p class="text-[15px] leading-7 text-dark-light">
-                                    Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Vivamus laoreet. Praesent turpis. Nunc nulla.Praesent nec nisl a purus blandit viverra. Nullam
-                                    dictum felis eu pede mollis pretium. Curabitur vestibulum
+
+                                <p >
+                                    <b>Comunicación PLC - Celda Robotica (Proceso de Pintado):</b></br></br>
+
+                                    <b>Protocolo:</b> El protocolo dependera de lo indicado por el fabricante, sin embargo esta información no fue encontrada en la ficha tecnica, sin embargo se espera que el protocolo empleado pueda ser Profibus
+                                </br>
+                                    <b>Canales:</b> Se emplean cables Ethernet o adaptadores específicos para conectar el PLC y el robot y su controlador.
+                                </br>
+                                    <b>Niveles de la pirámide de automatización:</b> La comunicación se establece entre el nivel de control (PLC) y el nivel de ejecución (manipulador - controlador) en el nivel inferior de la pirámide de automatización.
+
+
+                                </p>
+
+                                <p >
+                                    <b>Comunicación PLC - Sistema de control de calidad (Bandas, pistones):</b></br></br>
+
+                                    <b>Protocolo:</b> Para este caso nuevamente emprearemos profibus para y asi mismo señales digitales para enviar señales a los actuadores y capturar información de los sensores
+                                </br>
+                                    <b>Canales:</b> La conexión se realizara a través de cables Ethernet y asi mismo cables de poder para el envio de las señales digitales
+                                </br>
+                                    <b>Niveles de la pirámide de automatización:</b> Esta comunicación se produce entre el nivel de control (PLC) y el nivel de campo.
+                                </p>
+
+                                <p >
+                                    <b>Monitoreo y visualización en la nube mediante dashboards:</b></br></br>
+
+                                    <b>Protocolo:</b> Para la conexión con ignition usamos el protocolo MQTT
+                                </br>
+                                    <b>Canales:</b> Se utiliza Internet a través de cables Ethernet para el envio de la información a ignition
+                                </br>
+                                    <b>Niveles de la pirámide de automatización:</b> La comunicación se realiza desde el nivel de control (PLC) hasta el nivel de supervisión
+                                </p>
+
+                                <p >
+                                    <b>Conexión Gemelo Digital:</b></br></br>
+
+                                    <b>Protocolo:</b> Para la conexión con entre ignition y Studio 5000 usamos el protocolo OPC
+                                </br>
+                                    <b>Canales:</b> Respecto a los canales usamos conexión ethernet o WiFi
+
+                                </br>
+                                    <b>Niveles de la pirámide de automatización:</b> La comunicación se realiza entre el nivel de supervisión y el de planeación, siendo esta una de las finalides del gemelo digital implementado.
+                                </p>
+
+                                <p >
+                                    <b>Respecto a la elección de Profibus:</b></br></br>
+                                    Se opta por usar este protocolo en el nivel de campo teniendo en cuenta las siguientes razones:</br></br>
+                                    <b>Amplia adopción en la industria:</b>  PROFIBUS es uno de los protocolos de comunicación más comunes en entornos industriales. Es compatible con una amplia gama de dispositivos de campo y ha sido ampliamente utilizado en diferentes sectores industriales, lo que facilita la integracions de nuevos dispositivos o la realización de ajustes en el proyecto.
+                                </br>
+                                    <b>Velocidad de transmisión:</b>  PROFIBUS ofrece diferentes velocidades de transmisión, como PROFIBUS DP (Decentralized Periphery) para la comunicación entre el PLC y los dispositivos de campo y PROFIBUS PA (Process Automation) para aplicaciones de proceso. Esto permite adaptar la velocidad de comunicación según se requiera , lo que puede ser beneficioso para garantizar una transmisión eficiente de datos en tiempo real teniendo en cuenta el trabajo con el gemelo digital.
+
+                                </br>
+                                <b>Robustez y confiabilidad:</b>  PROFIBUS se ha desarrollado para soportar entornos industriales exigentes, lo que garantiza su robustez y confiabilidad. Está diseñado para resistir interferencias electromagnéticas y ruidos, lo que es adecuado para nuestro entorno de producción dada la existencia de distintas fuentes de interferencias, como los motores y maquinaria usada en nuestro proceso productivo.
+                            </br>
+                            <b>Integración de diagnósticos y control de calidad:</b>   PROFIBUS proporciona funciones de diagnóstico avanzadas, lo que permite supervisar y realizar un efectivo. Esto nos permite saber el estado de los dispositivos de campo, detectar errores y realizar un mantenimiento predictivo, garantizando la continuidad del proceso y disminuyendo los riesgos.
+                                </br>
+                                <b>Soporte de fabricantes:</b>    PROFIBUS cuenta con el respaldo de numerosos fabricantes de dispositivos y sistemas, lo que garantiza una amplia disponibilidad de productos, servicios y documentacion. Esto hace que la integración de fututos dispositivos y la obtención de soporte técnico sea mas sencilla.
+                                </br>
                                 </p>
                             </div>
                         </div>
