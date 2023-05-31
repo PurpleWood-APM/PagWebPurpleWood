@@ -158,34 +158,155 @@
                     <div>
                         <div class="md:mt-[120px] mt-20 relative max-w-[752px] mx-auto space-y-10 md:space-y-12">
                             <div class="space-y-6">
+                                <div class="border-l-4 border-green pl-6">
+                                    <h3 class="font-semibold text-[22px] leading-9">Control secuencial - Rutina Grafcet</h3>
+                                </div>
                                 <p class="text-[15px] leading-7 text-dark-light">
-                                    Controladores industriales (PLC):
+                                    Para realizar el grafcet, se identificaron los diferentes procesos automáticos secuenciales que se deben realizar, no es solo uno para toda la planta, ya que, se busca que cada proceso se realice en paralelo o que un proceos no depende 100% de la actuación de procesos posteriores. por ellos de determianron los siguientes procesos y etapas:
+
+
+                                </br></br>
+                                    • Este proceso sería de fresado y cortado, donde un operario indicaría con tres botones que tipo de prodcuto quiere cortar, para pasar entre etapas es necesario que el controlador de la máuina cnc indique cuando termina la etapa de fresao y que pase automáticamente a la de corte. En este caso el operario coloca y quita la materia prima y los productos obtenidos
                                 </br>
-                                    • En el GitHub explicar cómo se desglosó el problema de control secuencial estableciendo operación, etapas, transiciones y modos, realizando una apropiada implementación en lógica programada (Grafcet y Ladder).
-                                    Identificar posibles puntos de aplicación de actuadores (neumáticos, hidráulicos o eléctricos) dentro del proyecto de automatización.
-                                </p>
-                                <p class="text-[15px] leading-7 text-dark-light">
-                                    Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Vivamus laoreet. Praesent turpis. Nunc nulla.Praesent nec nisl a purus blandit viverra. Nullam
-                                    dictum felis eu pede mollis pretium. Curabitur vestibulum aliquam leo. Sed libero. Praesent metus tellus, elementum eu, semper a, adipiscing nec
+                                    • Banda transportadora: este proceos trasnladará los objetos ensamblados si detecta que se coloca uno al incio de la banda transportadora( al lado de la zona de ensamble) hasta que lleguen al final de la banda que se encuentra al lado de la zona de almacenamiento, en este momento se debera desactivar la banda
+                                </br>
+                                    • Pintado: en este, un operario, indicará cuando empezar la rutina de pintadoy sensores de paso determinarán por las diferentes alturas de los objetos que tipo de rutina empezar. Cuando el controlador del robot indique que se terinó la rutina se debe apagar la banda trasnportadora aerea y las salidas que indican la activación del robot.
+                                </br>
+                                    • Inspección: debe haber una banda transportadora que desplace los objetos o productos terminados hasta que una camra detecte si es un produto de buena calidad, si no lo es, un elemento deberá empujarlo sacarlo de la banda, para esta acción se puede usar un pistón neumático o eléctrico que realice la tarea de empujar los productos, claro este actuador deberá tner una pieza complementaria que aumente la superficie de contacto para realizar correctamente el empuje
+
+                                </br></br>
+                                Todos los procesos deberán tener su botón de emergencia, que pararán inmediatamente el proceso, en algunos casos también serán usados como forma de apagado, como en caso del proceso 4 que también será la forma de apagar la banda trasnportadora.
+                            </br></br>
+                                    Si entramos a mayor detalle a cada proceso:
+                                </br></br>
+                                    <p>
+                                        <b>1.#. Fresado y cortado: Proceso donde se realiza el corte de la materia prima dependiendo el tipo de producto.</b>
+                                    </br></br>
+                                    1.#.0 Etapa de inicio: se verifica que las salidas del PLC que indican la activación de alguna secuencia en específico del PLC no estén prendidas
+                                    </br></br>
+                                    • condición de paso de etapa: que se orpima el boton de inicio de proceso, en este caso sería tres, para cada tipo de producto que se quiere fabricar.
+                                    </br></br></br>
+                                    1.#.1. Activación de secuecnia cnc de fresado: al haber detectado el tipo de pieza producto que se quiere producir, se activa la salida del PLC principal que de paso a esta secuencia de Fresado
+                                    </br></br>
+                                    • condición de paso de etapa: que se haga finalizado la secuencia de fresado
+                                    </br></br></br>
+                                    1.#.2 Activación de secuecnia cnc de corte: se desactivan las salidas de fresado y se activa la secuencia de corte del tipo de producto correspondiente
+                                    </br></br>
+                                    • condición de paso de etapa: que se haya finalizado la secuenia de corte
+                                    </br></br></br>
+                                    1.#.3 Desactivación de secuencias: se desactivan todas las salidas que indqiuen el incio de una secuencia
+                                    </br></br>
+                                    • Se debe retornar a la condicón de paso de etapa entre la 1.#.0 y la 1.#.1
+                                    </br></br></br>
+                                    </p>
+
+
+                                    <p>
+                                        <b>2.Banda Trasportadora a almacen:</b>
+                                    </br></br>
+                                    2.0 Etapa de inicio: se verifica que la salida del PLC que indican la activación de la banda trasnportadora no esté activada.
+                                    </br></br>
+                                    • condición de paso de etapa: que se detecte un objeto en un sensor al incio de la banda trasnportadora.
+                                    </br></br></br>
+                                    2.1. Activación de la banda transportadora: se activa la banda trasnportadora
+                                    </br></br>
+                                    • condición de paso de etapa: que se detecte un objeto en el sensor al final de la banda trasnportadora
+                                    </br></br></br>
+                                    2.2 desactivación banda trasnportadora: se desactivan la salidas que activa la banda transportadora
+                                    </br></br>
+                                    • condición de paso de etapa: que este desactivada la banda.
+                                    </br></br></br>
+                                    2.3 Desactivación banda trasnportadora: se desactivan la salidas que activa la banda trasnportadora (esta etapa se usa para evitar errores lógicos en LADDER)
+                                    </br></br>
+                                    • Se debe retornar a la condicón de paso de etapa entre la 2.0 y la 2.1
+                                    </br></br></br>
+                                    </p>
+
+
+
+                                    <p>
+                                        <b>3.Pintado:</b>
+                                    </br></br>
+                                    3.#.0 Etapa de inicio: se verifica que las salidas del PLC que indican la activación de una secuencia de pintado específica para cada tipo de producto del robot no estén activadas.
+                                    </br></br>
+                                    • condición de paso de etapa: que se detecta si se oprime el botón de inicio de rutina de pintado y se detecta que tipo de producto es.
+                                    </br></br></br>
+                                    3.#.1. Activación del robot: se activa las salidas que indica que proceso de pintado usar y se activa la banda trasnportadora aerea que moverá la objetos
+                                    </br></br>
+                                    • condición de paso de etapa: que se haya finalizado la rutina de pintado del robot
+                                    </br></br></br>
+                                    3.#.2 Desactivación de salidas : se desactivan la salidas que le idnican al robot que porceso realizar y se desactiva la banda trasnportadora aerea
+                                    </br></br>
+                                    • condición de paso de etapa: que las salidas de la banda y hacia el robot estén desactivadas
+                                    </br></br></br>
+                                    3.#.3 Desactivación de salidas: se desactivan la salidas que le idnican al robot que porceso realizar y se desactiva la banda trasnportadora aerea (esta etapa se usa para evitar errores lógicos en LADDER)
+                                    </br></br>
+                                    • Se debe retornar a la condicón de paso de etapa entre la 3.#.0 y la 3.#.1
+                                    </br></br></br>
+                                    </p>
+
+
+
+                                    <p>
+                                        <b>4.Inspección:</b>
+                                    </br></br>
+                                    4.0 Etapa de inicio: se verifica que la salida del PLC que indican la activación de la banda trasnportadora y el pistón neumático no estén activadas .
+                                    </br></br>
+                                    • condición de paso de etapa: que oprima el botón de encendido de la banda.
+                                    </br></br></br>
+                                    4.1. Activación de la banda trasnportadora: se activa la banda trasnportadora
+                                    </br></br>
+                                    • condición de paso de etapa: que la camara detecte un producto defectuoso
+                                    </br></br></br>
+                                    4.2 Activación de pistón: se activa la salida que hará extender el psitón neumático
+                                    </br></br>
+                                    • condición de paso de etapa: que hayan pasado .2s.
+                                    </br></br></br>
+                                    4.3 Desactivación de pistón: se desactiva la salida del psitón, que haga retraer el pistón neumático
+                                    </br></br>
+                                    • condición de paso de etapa: que el pistón esté retarido.
+                                    </br></br></br>
+                                    4.4 Desactivación del pistón: se desactivan la salidas que extienden el psitón (esta etapa se usa para evitar errores lógicos en LADDER)
+                                    </br></br>
+                                    • Se debe retornar a la condicón de paso de etapa entre la 4.1 y la 2.2
+                                    </br></br></br>
+                                    </p>
+
+
                                 </p>
                             </div>
                             <div class="border-l-4 border-green pl-6">
-                                <h3 class="font-semibold text-[22px] leading-9">A rich text element can be used with static or dynamic content For static content, just drop it into any page</h3>
+                                <h3 class="font-semibold text-[22px] leading-9">Nomenclatura</h3>
                             </div>
-                            <div class="space-y-6">
-                                <p class="text-[15px] leading-7 text-dark-light">
-                                    Praesent ac sem eget est egestas volutpat. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Curabitur suscipit suscipit tellus. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id,
-                                    lorem. Etiam rhoncus.Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est.
-                                    Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus
-                                </p>
-                                <p class="text-[15px] leading-7 text-dark-light">
-                                    Vestibulum ullamcorper mauris at ligula. Phasellus consectetuer vestibulum elit. Sed a libero. Vivamus consectetuer hendrerit lacus. Quisque ut nisi.Cum sociis natoque penatibus
-                                </p>
-                                <p class="text-[15px] leading-7 text-dark-light">
-                                    Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Vivamus laoreet. Praesent turpis. Nunc nulla.Praesent nec nisl a purus blandit viverra. Nullam
-                                    dictum felis eu pede mollis pretium. Curabitur vestibulum
-                                </p>
+
+                            <img src="assets/images/modulos/plc/reservadas.png" alt="" />
+                            </br></br>
+
+                            <div class="border-l-4 border-green pl-6">
+                                <h3 class="font-semibold text-[22px] leading-9">Procesos</h3>
                             </div>
+
+                            <img src="assets/images/modulos/plc/procesos.png" alt="" />
+                            </br></br>
+
+                            <div class="border-l-4 border-green pl-6">
+                                <h3 class="font-semibold text-[22px] leading-9">Proceso general</h3>
+                            </div>
+
+                            <img src="assets/images/modulos/plc/general.png" width="500" alt="" />
+                            </br></br>
+
+                            <div class="border-l-4 border-green pl-6">
+                                <h3 class="font-semibold text-[22px] leading-9">Lista entradas y salidas</h3>
+                            </div>
+
+                            <img src="assets/images/modulos/plc/entradas.png" width="700" alt="" />
+                            </br></br>
+
+                            <p>
+                                Si se desea ver el progama realizado en LADDER dirjase a <a href="https://github.com/PurpleWood-APM/DisenoDeProduccion"><b class="text-green"> Código en ladder  </b> </a> de nuestro repositorio complementario para archivos que puedan ser de gran tamaño. El proyecto en LADDER lo encontrará con el nombre ProyectoAPM.ADC También puede ver las conexiones entre el plc, studio 5000 y demás softwares en el siguiente link: <a href="https://www.youtube.com/watch?v=R3Ken7L0liA&t=3s"><b class="text-green"> Video de SCADA </b> </a>
+                            </p>
+
                         </div>
                     </div>
                 </div>
