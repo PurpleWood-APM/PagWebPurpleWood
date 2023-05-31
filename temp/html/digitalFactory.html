@@ -164,8 +164,61 @@
                         <div class="md:mt-[120px] mt-20 relative max-w-[752px] mx-auto space-y-10 md:space-y-12">
                             <div class="space-y-6">
                                 <p class="text-[15px] leading-7 text-dark-light">
-                                    Digital Factory
+                                    Visión generla de la planta La planta se divide en las siguientes zonas o procesos.
+                                    </br>
+                                    <img src="assets/images/modulos/digitalFactory/1.png" alt="" />
+                                </br></br>
+                                1. la zona de fresado y corte de materia prima.
+                                <img src="assets/images/modulos/digitalFactory/2.png" alt="" />
+                                Este proceso al ser automático, contará con 3 botones para indicar la rutina cnc que debe ejecutar la fresadora dependendiendo del tipo de producto que se quiera manufacturar. Además de tener entradas lógicas al plc principal que indique la finalización de la rutina de fresado y la de corte. También hay 6 salidas lógicas para indicar al controlador que proceso empezar, si el fresado de la pieza 1 o el corte del producto 3
+
+                            </br></br>
+                                2. la zona de lijado y barnizado
+                                <img src="assets/images/modulos/digitalFactory/3.png" alt="" />
+                                Esta zona no es automática y las bandas transportadoras que se encuentran en fresado y corte y lijado y banrnizado, no son automáticas, solo se uso su modelo pero están planaeadas como rodillos para deslizar el material.
+
+                        </br></br>
+                                3. la zona de ensamble
+                                <img src="assets/images/modulos/digitalFactory/4.png" alt="" />
+                                Esta zona no es automática, en este proceso se espera que un operario pegue o ensamble las piezas para armar un prodcuto.
+
+                            </br></br>
+                            4. Zona de transporte a almacen de secado
+                            <img src="assets/images/modulos/digitalFactory/5.png" alt="" />
+                            Esta zona cuenta con un actuador, que sería el motor que haga mover la banda, se esperararía que apesar del modelo mostrado sean varias bandas, que fuese una banda continua, la cual cuenta con dos sensores de paso, uno al incio de la banda ( al lado de la zona de ensamble) el cual indicaría la activación de la banda y trasnportará los productos ensamblados hasta el final de la banda, donde hay sensor de paso, el cual indicaría la desactivación o parada de la banda.
+
+                            </br></br>
+                            5. Zona de almacenado de piezas ensambladas.
+                            <img src="assets/images/modulos/digitalFactory/6.png" alt="" />
+                            Esta zona no es automática Por lo que no se identifican sensores o actuadores.
+
+                        </br></br>
+                        6. Zona de pintura
+                        <img src="assets/images/modulos/digitalFactory/7.png" alt="" />
+                        Esta zona automatizada cuenta con un robot y una banda transportadora aerea(no se cargó para mejorar el rendimiento de la planta, además las animaciones o sensores o el proceso a detalle se puede visualizar en el módulo de robótica)
+
+                            </br></br>
+                            7. Zona alamacen de elementos pintados
+                            <img src="assets/images/modulos/digitalFactory/8.png" alt="" />
+                            Zona no automática, pero se espera que un usauario, recojas las piezas de la banda transportadora aerea y las traslade a este almacen, donde debe dejar las piezas colgando para su secado
+
+
+                        </br></br>
+                        8. Zona de Inspección
+                        <img src="assets/images/modulos/digitalFactory/9.png" alt="" />
+                        Esta zona automática se esepera que un actuador lineal empuje los productos afuera de la banda si detetcta que el producto es defectuoso. Por lo que los actuadores que se identificaron fueron, el motor de la banda trasnportadora y el actuador lineal o pistón neumatico, además de contar con un botón que encenderá la banda indeifinidamente, hasta se oprima el botón de parada y una camara conectada a un modelo de inteligencía artificial para detectar productos defectuoso y accionar el pistón.
+
+
+
+                    </br></br>
+                    9. Zona de empaquetado
+                    <img src="assets/images/modulos/digitalFactory/10.png" alt="" />
+                    Esta zona no es automática y solo se realizará el empaquetado de los produtcos de buena calidad.
+
                                 </p>
+
+
+                                Si se quiere ver los archivos NX de la planta dirijase al <a href="https://github.com/PurpleWood-APM/DisenoDeProduccion"><b class="text-green"> Repositorio de Diseño de producción </b> </a> el repositorio para elementos pesados como diseños 3D.
                             </div>
                         </div>
                     </div>
